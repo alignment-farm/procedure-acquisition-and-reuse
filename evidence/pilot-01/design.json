@@ -1,0 +1,85 @@
+{
+  "exploratory": true,
+  "training": [
+    [
+      "amber",
+      false,
+      "cat"
+    ],
+    [
+      "amber",
+      false,
+      "fern"
+    ],
+    [
+      "blue",
+      false,
+      "cat"
+    ],
+    [
+      "blue",
+      false,
+      "fern"
+    ],
+    [
+      "blue",
+      true,
+      "cat"
+    ],
+    [
+      "blue",
+      true,
+      "fern"
+    ]
+  ],
+  "cases": [
+    [
+      "amber",
+      false,
+      "planet"
+    ],
+    [
+      "amber",
+      false,
+      "silver"
+    ],
+    [
+      "amber",
+      true,
+      "planet"
+    ],
+    [
+      "amber",
+      true,
+      "silver"
+    ],
+    [
+      "blue",
+      false,
+      "planet"
+    ],
+    [
+      "blue",
+      false,
+      "silver"
+    ],
+    [
+      "blue",
+      true,
+      "planet"
+    ],
+    [
+      "blue",
+      true,
+      "silver"
+    ]
+  ],
+  "contexts": {
+    "none": "",
+    "examples": "Checked successful interactions:\nmode=amber, priority=normal, item=cat -> dax tac-2\nmode=amber, priority=normal, item=fern -> dax nref-2\nmode=blue, priority=normal, item=cat -> wug cat-2\nmode=blue, priority=normal, item=fern -> wug fern-2\nmode=blue, priority=urgent, item=cat -> wug cat-9\nmode=blue, priority=urgent, item=fern -> wug fern-9",
+    "oracle_lesson": "For amber mode, use tool dax and reverse the item string. For blue mode, use tool wug and keep the item unchanged. For urgent priority, append -9 to the transformed item; for normal priority append -2. Output TOOL ARG only."
+  },
+  "rule": "For amber mode, use tool dax and reverse the item string. For blue mode, use tool wug and keep the item unchanged. For urgent priority, append -9 to the transformed item; for normal priority append -2. Output TOOL ARG only.",
+  "limit": 96,
+  "temperature": 0
+}

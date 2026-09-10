@@ -1,0 +1,23 @@
+{
+  "none": {
+    "correct": 0,
+    "total": 8,
+    "seconds": 3.2659558320301585,
+    "prompt_tokens": 448,
+    "completion_tokens": 136
+  },
+  "examples": {
+    "correct": 4,
+    "total": 8,
+    "seconds": 1.2470236689550802,
+    "prompt_tokens": 1352,
+    "completion_tokens": 80
+  },
+  "oracle_lesson": {
+    "correct": 1,
+    "total": 8,
+    "seconds": 1.154283335985383,
+    "prompt_tokens": 864,
+    "completion_tokens": 75
+  }
+}
