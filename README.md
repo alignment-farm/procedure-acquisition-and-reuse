@@ -128,49 +128,38 @@ intervention. No paid API or remote-compute campaign is commissioned by this bri
 
 ## Findings and publication
 
-**Initial campaign complete (11 September 2026).** The [local report](output/pdf/procedure-acquisition.pdf) and [results/reproduction note](notes/2026-09-11-acquisition-results.md) document the frozen comparison. The adapter recalled 12/12 training calls but passed 26/64 new-input tasks, versus 41/64 for examples and 64/64 for a supplied rule. A defective generated lesson passed 0/64. No quality-matched cost repayment was established. All evidence, the final adapter, code and LaTeX source are preserved; the bounded campaign stops without a hyperparameter sweep.
+**The initial experiment and one approved bounded follow-up are complete (11 September 2026).** They do not settle the general question of when parameter storage is worthwhile. In the tested setup, a fixed twelve-demonstration LoRA adapter recalled the training calls but transferred poorly relative to retained examples. No acquisition-cost repayment at comparable useful accuracy was demonstrated. The bounded attempt to construct a validated compact lesson also failed.
 
-Add links here as research notes, evidence, and a manuscript become available.
-Keep methods, code, configurations, saved outputs, failures, and reproduction
-instructions in this project. The intended publication format is LaTeX source,
-a bibliography, figures as needed, and a compiled PDF, with effort proportional
-to the investigation. An early useful finding need not wait for publication
-polish. External submission is a separate user decision.
+The [follow-up results and current interpretation](notes/2026-09-11-followup-results.md) separate new ordinary words, random identifiers and the withheld condition combination:
 
-The [ancillary-study guidance](../../construct-2/notes/ANCILLARY_STUDY.md) describes
-the relationship: this project investigates and publishes locally; Construct-2
-reads those publications and updates its broader theories.
+| Representation | Ordinary words /32 | Random identifiers /32 | Withheld combination /16 |
+|---|---:|---:|---:|
+| Retained examples | 31 | 20 | 8 |
+| Unchanged adapter | 13 | 15 | 0 |
+| Selected **unvalidated** lesson | 4 | 4 | 0 |
+| Supplied correct rule (privileged diagnostic) | 32 | 32 | 16 |
+| No acquisition | 0 | 0 | 0 |
 
-### Initial exploration — 10 September 2026
+The adapter's failures were not confined to random strings. The generated lesson and its two allowed revisions scored 0/12, 2/12 and 0/12 on acquisition-only validation; none passed. We selected the highest-scoring candidate by the frozen fallback rule and labeled it unvalidated. This is not evidence against all compact lessons or stronger learning methods. The dataset is small, the composition rule requires an inductive assumption, and lexical strata are matched only by character length.
 
-The [initial protocol and results](notes/2026-09-10-start.md) document a completed
-24-call local Docker pilot, versioned reading leads, raw evidence and reproduction
-instructions. Examples scored 4/8, no evidence 0/8, and a supplied correct rule
-1/8 on an unfamiliar tool-argument task. Execution competence is not yet
-established; these exploratory results do not test parameter acquisition or
-repayment. No adapter has been trained in this study yet.
+The current bounded investigation stops here, without a training sweep. A larger campaign would need a separately scoped acquisition or lesson-construction method and fresh evaluation material. No later-learning/correction extension or external submission has been performed.
 
-### Handoff review — 11 September 2026
+### Reports and reproduction
 
-The [handoff audit](notes/2026-09-11-handoff-audit.md) selects preservation and
-refactoring. It documents the partial Docker run, corrections to unsupported
-failure annotations, and repairs to the unexecuted native MLX draft. Historical
-outputs remain intact; the native checkpoint is a distinct exploratory condition.
-The repaired [native diagnostic results](evidence/pilot-03-mlx/summary.json)
-completed 40 calls: uppercase examples 8/8, supplied uppercase rule 6/8,
-reversal examples and rule each 4/8, no evidence 0/8. The declared supplied-rule
-gate remains unmet; no task adapter has been trained.
+- **Current addendum:** [bounded follow-up results](notes/2026-09-11-followup-results.md), [frozen protocol](protocol/followup-v1.md), [audited analysis](evidence/followup-v1-analysis/analysis.json). All 362 calls completed, including 320 fresh evaluation calls, 36 acquisition-validation calls, two lesson revisions and four saved-adapter replays. Adapter/base invariants passed.
+- **Initial experiment:** [four-page PDF](output/pdf/procedure-acquisition.pdf), [LaTeX source](paper/procedure-acquisition.tex), [bibliography](paper/references.bib), [results and reproduction instructions](notes/2026-09-11-acquisition-results.md), [frozen protocol](protocol/acquisition-v1.md). On its distinct random-identifier set, the adapter scored 26/64 versus examples' 41/64 and a supplied rule's 64/64; training recall was 12/12. The initial generated lesson scored 0/64. Its PDF is preserved as the initial report; read the addendum for the current scope and conclusion.
+- **Evidence:** [initial run](evidence/acquisition-v1/summary.json), [saved adapter](evidence/acquisition-v1/adapter.safetensors), [follow-up run](evidence/followup-v1/summary.json). Run directories contain raw prompts, outputs, cases, source snapshots, costs, failures where applicable, and checksums. The adapter was not retrained in the follow-up.
 
-The subsequent [execution diagnostic](notes/2026-09-11-execution-diagnostic.md)
-completed 54 calls: uppercase-only 6/6, original conditional rule 21/24,
-ordered-step rewrite 12/24. This locates the observed difficulty in conditional
-execution and prompt sensitivity; it does not establish parameter learning.
-The refactored runner shares independently checked task definitions and saves
-both source files with each run.
+Use `uv sync --extra adaptation` and the exact local model revision identified in the reproduction notes. New runs require a fresh output directory. The [paper build instructions](paper/README.md) reproduce the initial PDF. Tests run with `uv run --no-sync python -m unittest discover -s tests -v`.
 
-The [component diagnostic](notes/2026-09-11-components.md) completed 144 calls:
-routing, conditional transformation, suffix selection and formatting each passed
-24/24 in isolation; complete instructions scored 21/24 (original) and 22/24
-(table). We retain the original interface and stop prompt search. Residual
-composition errors will be measured in the acquisition comparison rather than
-requiring perfect supplied-rule execution before proceeding.
+This study publishes locally. The [ancillary-study guidance](../../construct-2/notes/ANCILLARY_STUDY.md) describes its relationship to Construct-2, which reads these findings and updates its broader theories.
+
+### Exploratory history
+
+These records explain task development and implementation decisions; they are not additional prospective tests or current blockers.
+
+- [Initial Docker pilot](notes/2026-09-10-start.md): 24 calls; examples 4/8, supplied rule 1/8, no evidence 0/8. No task adapter had been trained at that stage.
+- [Resource recheck](notes/2026-09-10-resources-recheck.md) and [handoff audit](notes/2026-09-11-handoff-audit.md): preserved the interrupted Docker run, corrected unsupported failure interpretations and repaired the native MLX draft.
+- [Execution diagnostic](notes/2026-09-11-execution-diagnostic.md): 54 calls; uppercase alone 6/6, original conditional rule 21/24, ordered-step rewrite 12/24.
+- [Component diagnostic](notes/2026-09-11-components.md): 144 calls; routing, conditional transformation, suffix selection and supplied-intermediate formatting each 24/24; complete original/table rules 21/24 and 22/24. This justified measuring residual execution errors rather than demanding a perfect supplied-rule gate before the acquisition experiment.
+- [Closest-work review](notes/2026-09-11-literature.md): versioned primary-source method comparisons and implementation provenance; this investigation is not a replication of SEAL, PMD, PERK or ACE and claims no novel learning mechanism.

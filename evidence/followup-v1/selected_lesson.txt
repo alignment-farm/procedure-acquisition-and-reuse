@@ -1,0 +1,1 @@
+For any item, append "-2" if mode=amber, "-9" if mode=blue. Prefix with "dax" for amber, "wug" for blue. Priority (normal/urgent) only affects suffix: normal → -2, urgent → -9. Assumption: Unseen items follow the same rule; prefix is determined solely by mode.

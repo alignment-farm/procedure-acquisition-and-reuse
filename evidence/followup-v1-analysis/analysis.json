@@ -1,0 +1,335 @@
+{
+  "branches": {
+    "none": {
+      "correct": 0,
+      "total": 64,
+      "strata": {
+        "ordinary": {
+          "correct": 0,
+          "total": 32,
+          "seen_correct": 0,
+          "seen_total": 24,
+          "withheld_correct": 0,
+          "withheld_total": 8,
+          "by_length": {
+            "4": 0,
+            "6": 0,
+            "8": 0,
+            "10": 0
+          },
+          "field_correct": {
+            "parseable": 0,
+            "tool": 0,
+            "item": 0,
+            "suffix": 0,
+            "strict_format": 0
+          }
+        },
+        "random": {
+          "correct": 0,
+          "total": 32,
+          "seen_correct": 0,
+          "seen_total": 24,
+          "withheld_correct": 0,
+          "withheld_total": 8,
+          "by_length": {
+            "4": 0,
+            "6": 0,
+            "8": 0,
+            "10": 0
+          },
+          "field_correct": {
+            "parseable": 0,
+            "tool": 0,
+            "item": 0,
+            "suffix": 0,
+            "strict_format": 0
+          }
+        }
+      },
+      "prompt_tokens": 4136,
+      "completion_tokens": 355,
+      "inference_seconds": 17.99356958491262,
+      "verification_seconds": 0.00013691690401174128,
+      "switch_seconds": 0.01828091702191159
+    },
+    "examples": {
+      "correct": 51,
+      "total": 64,
+      "strata": {
+        "ordinary": {
+          "correct": 31,
+          "total": 32,
+          "seen_correct": 24,
+          "seen_total": 24,
+          "withheld_correct": 7,
+          "withheld_total": 8,
+          "by_length": {
+            "4": 8,
+            "6": 8,
+            "8": 8,
+            "10": 7
+          },
+          "field_correct": {
+            "parseable": 32,
+            "tool": 32,
+            "item": 31,
+            "suffix": 32,
+            "strict_format": 32
+          }
+        },
+        "random": {
+          "correct": 20,
+          "total": 32,
+          "seen_correct": 19,
+          "seen_total": 24,
+          "withheld_correct": 1,
+          "withheld_total": 8,
+          "by_length": {
+            "4": 7,
+            "6": 5,
+            "8": 4,
+            "10": 4
+          },
+          "field_correct": {
+            "parseable": 32,
+            "tool": 32,
+            "item": 20,
+            "suffix": 27,
+            "strict_format": 32
+          }
+        }
+      },
+      "prompt_tokens": 18536,
+      "completion_tokens": 502,
+      "inference_seconds": 31.864366418973077,
+      "verification_seconds": 0.00014091291814111173,
+      "switch_seconds": 0.004655877943150699
+    },
+    "lesson": {
+      "correct": 8,
+      "total": 64,
+      "strata": {
+        "ordinary": {
+          "correct": 4,
+          "total": 32,
+          "seen_correct": 4,
+          "seen_total": 24,
+          "withheld_correct": 0,
+          "withheld_total": 8,
+          "by_length": {
+            "4": 2,
+            "6": 0,
+            "8": 2,
+            "10": 0
+          },
+          "field_correct": {
+            "parseable": 5,
+            "tool": 5,
+            "item": 4,
+            "suffix": 5,
+            "strict_format": 5
+          }
+        },
+        "random": {
+          "correct": 4,
+          "total": 32,
+          "seen_correct": 4,
+          "seen_total": 24,
+          "withheld_correct": 0,
+          "withheld_total": 8,
+          "by_length": {
+            "4": 2,
+            "6": 0,
+            "8": 1,
+            "10": 1
+          },
+          "field_correct": {
+            "parseable": 4,
+            "tool": 4,
+            "item": 4,
+            "suffix": 4,
+            "strict_format": 4
+          }
+        }
+      },
+      "prompt_tokens": 8936,
+      "completion_tokens": 500,
+      "inference_seconds": 25.78500758597511,
+      "verification_seconds": 0.00013866496738046408,
+      "switch_seconds": 4.87707438878715e-06
+    },
+    "oracle": {
+      "correct": 64,
+      "total": 64,
+      "strata": {
+        "ordinary": {
+          "correct": 32,
+          "total": 32,
+          "seen_correct": 24,
+          "seen_total": 24,
+          "withheld_correct": 8,
+          "withheld_total": 8,
+          "by_length": {
+            "4": 8,
+            "6": 8,
+            "8": 8,
+            "10": 8
+          },
+          "field_correct": {
+            "parseable": 32,
+            "tool": 32,
+            "item": 32,
+            "suffix": 32,
+            "strict_format": 32
+          }
+        },
+        "random": {
+          "correct": 32,
+          "total": 32,
+          "seen_correct": 24,
+          "seen_total": 24,
+          "withheld_correct": 8,
+          "withheld_total": 8,
+          "by_length": {
+            "4": 8,
+            "6": 8,
+            "8": 8,
+            "10": 8
+          },
+          "field_correct": {
+            "parseable": 32,
+            "tool": 32,
+            "item": 32,
+            "suffix": 32,
+            "strict_format": 32
+          }
+        }
+      },
+      "prompt_tokens": 7528,
+      "completion_tokens": 509,
+      "inference_seconds": 24.256530256185215,
+      "verification_seconds": 0.00014125302550382912,
+      "switch_seconds": 5.084963049739599e-06
+    },
+    "adapter": {
+      "correct": 28,
+      "total": 64,
+      "strata": {
+        "ordinary": {
+          "correct": 13,
+          "total": 32,
+          "seen_correct": 13,
+          "seen_total": 24,
+          "withheld_correct": 0,
+          "withheld_total": 8,
+          "by_length": {
+            "4": 4,
+            "6": 4,
+            "8": 2,
+            "10": 3
+          },
+          "field_correct": {
+            "parseable": 27,
+            "tool": 27,
+            "item": 13,
+            "suffix": 26,
+            "strict_format": 27
+          }
+        },
+        "random": {
+          "correct": 15,
+          "total": 32,
+          "seen_correct": 15,
+          "seen_total": 24,
+          "withheld_correct": 0,
+          "withheld_total": 8,
+          "by_length": {
+            "4": 4,
+            "6": 4,
+            "8": 4,
+            "10": 3
+          },
+          "field_correct": {
+            "parseable": 29,
+            "tool": 29,
+            "item": 16,
+            "suffix": 25,
+            "strict_format": 29
+          }
+        }
+      },
+      "prompt_tokens": 4136,
+      "completion_tokens": 648,
+      "inference_seconds": 24.8567124560941,
+      "verification_seconds": 0.00013721207506023347,
+      "switch_seconds": 0.02334695716854185
+    }
+  },
+  "candidates": [
+    {
+      "candidate": 0,
+      "text": "Lesson: For any item, append \"-2\" if mode=amber; append \"-9\" if mode=blue. Priority (normal/urgent) determines suffix: normal \u2192 -2, urgent \u2192 -9. Assumption: Unseen combinations (e.g., non-natural items) follow the same rule unless specified.",
+      "correct": 0,
+      "total": 12
+    },
+    {
+      "candidate": 1,
+      "text": "For any item, append \"-2\" if mode=amber, \"-9\" if mode=blue. Prefix with \"dax\" for amber, \"wug\" for blue. Priority (normal/urgent) only affects suffix: normal \u2192 -2, urgent \u2192 -9. Assumption: Unseen items follow the same rule; prefix is determined solely by mode.",
+      "correct": 2,
+      "total": 12
+    },
+    {
+      "candidate": 2,
+      "text": "For any item: if mode=amber, prefix with \"dax\" and append \"-2\"; if mode=blue, prefix with \"wug\" and append \"-2\" for normal, \"-9\" for urgent. Capitalize the item name. Assumption: Unseen items follow identical rules; capitalization and suffix depend only on mode and priority.",
+      "correct": 0,
+      "total": 12
+    }
+  ],
+  "selection": {
+    "kind": "selection",
+    "elapsed": 28.475239916006103,
+    "candidate": 1,
+    "text": "For any item, append \"-2\" if mode=amber, \"-9\" if mode=blue. Prefix with \"dax\" for amber, \"wug\" for blue. Priority (normal/urgent) only affects suffix: normal \u2192 -2, urgent \u2192 -9. Assumption: Unseen items follow the same rule; prefix is determined solely by mode.",
+    "correct": 2,
+    "total": 12,
+    "validated": false
+  },
+  "costs": {
+    "original_lesson_seconds": 2.0301267500035465,
+    "followup_construction_seconds": 17.09470912301913,
+    "total_lesson_construction_seconds": 19.124835873022676,
+    "followup_construction_prompt_tokens": 6207,
+    "followup_construction_completion_tokens": 365,
+    "original_lesson_prompt_tokens": 274,
+    "original_lesson_completion_tokens": 66,
+    "validation_calls": 36,
+    "revision_calls": 2,
+    "adapter_original_training_seconds": 13.16198316597729,
+    "adapter_original_preparation_seconds": 0.002036458987277001,
+    "adapter_additional_training_seconds": 0.0
+  },
+  "total": {
+    "kind": "complete",
+    "elapsed": 160.0187987080135,
+    "status": "complete",
+    "error": null,
+    "seconds": 160.01879683299921,
+    "peak_mlx_bytes": 9625156876
+  },
+  "invariants": {
+    "kind": "final_invariants",
+    "elapsed": 160.01836325001204,
+    "adapter_unchanged": true,
+    "base_unchanged": true,
+    "restored_logits_exact": true
+  },
+  "total_model_calls": 362,
+  "caveats": [
+    "The selected lesson is validated only if acquisition score is 12/12.",
+    "Sixteen identifier clusters; no significance or independence claim.",
+    "Lexical strata matched by character length only, not tokenization or frequency.",
+    "No additional adapter training; original acquisition costs remain applicable.",
+    "Unparseable full-call diagnostics conservatively fail all fields."
+  ]
+}

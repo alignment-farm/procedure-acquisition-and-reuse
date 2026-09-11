@@ -1,0 +1,514 @@
+[
+  {
+    "stratum": "ordinary",
+    "case": [
+      "amber",
+      false,
+      "lamp"
+    ]
+  },
+  {
+    "stratum": "ordinary",
+    "case": [
+      "amber",
+      true,
+      "lamp"
+    ]
+  },
+  {
+    "stratum": "ordinary",
+    "case": [
+      "blue",
+      false,
+      "lamp"
+    ]
+  },
+  {
+    "stratum": "ordinary",
+    "case": [
+      "blue",
+      true,
+      "lamp"
+    ]
+  },
+  {
+    "stratum": "random",
+    "case": [
+      "amber",
+      false,
+      "bvng"
+    ]
+  },
+  {
+    "stratum": "random",
+    "case": [
+      "amber",
+      true,
+      "bvng"
+    ]
+  },
+  {
+    "stratum": "random",
+    "case": [
+      "blue",
+      false,
+      "bvng"
+    ]
+  },
+  {
+    "stratum": "random",
+    "case": [
+      "blue",
+      true,
+      "bvng"
+    ]
+  },
+  {
+    "stratum": "ordinary",
+    "case": [
+      "amber",
+      false,
+      "boat"
+    ]
+  },
+  {
+    "stratum": "ordinary",
+    "case": [
+      "amber",
+      true,
+      "boat"
+    ]
+  },
+  {
+    "stratum": "ordinary",
+    "case": [
+      "blue",
+      false,
+      "boat"
+    ]
+  },
+  {
+    "stratum": "ordinary",
+    "case": [
+      "blue",
+      true,
+      "boat"
+    ]
+  },
+  {
+    "stratum": "random",
+    "case": [
+      "amber",
+      false,
+      "datw"
+    ]
+  },
+  {
+    "stratum": "random",
+    "case": [
+      "amber",
+      true,
+      "datw"
+    ]
+  },
+  {
+    "stratum": "random",
+    "case": [
+      "blue",
+      false,
+      "datw"
+    ]
+  },
+  {
+    "stratum": "random",
+    "case": [
+      "blue",
+      true,
+      "datw"
+    ]
+  },
+  {
+    "stratum": "ordinary",
+    "case": [
+      "amber",
+      false,
+      "copper"
+    ]
+  },
+  {
+    "stratum": "ordinary",
+    "case": [
+      "amber",
+      true,
+      "copper"
+    ]
+  },
+  {
+    "stratum": "ordinary",
+    "case": [
+      "blue",
+      false,
+      "copper"
+    ]
+  },
+  {
+    "stratum": "ordinary",
+    "case": [
+      "blue",
+      true,
+      "copper"
+    ]
+  },
+  {
+    "stratum": "random",
+    "case": [
+      "amber",
+      false,
+      "svtpcg"
+    ]
+  },
+  {
+    "stratum": "random",
+    "case": [
+      "amber",
+      true,
+      "svtpcg"
+    ]
+  },
+  {
+    "stratum": "random",
+    "case": [
+      "blue",
+      false,
+      "svtpcg"
+    ]
+  },
+  {
+    "stratum": "random",
+    "case": [
+      "blue",
+      true,
+      "svtpcg"
+    ]
+  },
+  {
+    "stratum": "ordinary",
+    "case": [
+      "amber",
+      false,
+      "garden"
+    ]
+  },
+  {
+    "stratum": "ordinary",
+    "case": [
+      "amber",
+      true,
+      "garden"
+    ]
+  },
+  {
+    "stratum": "ordinary",
+    "case": [
+      "blue",
+      false,
+      "garden"
+    ]
+  },
+  {
+    "stratum": "ordinary",
+    "case": [
+      "blue",
+      true,
+      "garden"
+    ]
+  },
+  {
+    "stratum": "random",
+    "case": [
+      "amber",
+      false,
+      "wcporw"
+    ]
+  },
+  {
+    "stratum": "random",
+    "case": [
+      "amber",
+      true,
+      "wcporw"
+    ]
+  },
+  {
+    "stratum": "random",
+    "case": [
+      "blue",
+      false,
+      "wcporw"
+    ]
+  },
+  {
+    "stratum": "random",
+    "case": [
+      "blue",
+      true,
+      "wcporw"
+    ]
+  },
+  {
+    "stratum": "ordinary",
+    "case": [
+      "amber",
+      false,
+      "notebook"
+    ]
+  },
+  {
+    "stratum": "ordinary",
+    "case": [
+      "amber",
+      true,
+      "notebook"
+    ]
+  },
+  {
+    "stratum": "ordinary",
+    "case": [
+      "blue",
+      false,
+      "notebook"
+    ]
+  },
+  {
+    "stratum": "ordinary",
+    "case": [
+      "blue",
+      true,
+      "notebook"
+    ]
+  },
+  {
+    "stratum": "random",
+    "case": [
+      "amber",
+      false,
+      "sbvsckzw"
+    ]
+  },
+  {
+    "stratum": "random",
+    "case": [
+      "amber",
+      true,
+      "sbvsckzw"
+    ]
+  },
+  {
+    "stratum": "random",
+    "case": [
+      "blue",
+      false,
+      "sbvsckzw"
+    ]
+  },
+  {
+    "stratum": "random",
+    "case": [
+      "blue",
+      true,
+      "sbvsckzw"
+    ]
+  },
+  {
+    "stratum": "ordinary",
+    "case": [
+      "amber",
+      false,
+      "mountain"
+    ]
+  },
+  {
+    "stratum": "ordinary",
+    "case": [
+      "amber",
+      true,
+      "mountain"
+    ]
+  },
+  {
+    "stratum": "ordinary",
+    "case": [
+      "blue",
+      false,
+      "mountain"
+    ]
+  },
+  {
+    "stratum": "ordinary",
+    "case": [
+      "blue",
+      true,
+      "mountain"
+    ]
+  },
+  {
+    "stratum": "random",
+    "case": [
+      "amber",
+      false,
+      "rpzboqdp"
+    ]
+  },
+  {
+    "stratum": "random",
+    "case": [
+      "amber",
+      true,
+      "rpzboqdp"
+    ]
+  },
+  {
+    "stratum": "random",
+    "case": [
+      "blue",
+      false,
+      "rpzboqdp"
+    ]
+  },
+  {
+    "stratum": "random",
+    "case": [
+      "blue",
+      true,
+      "rpzboqdp"
+    ]
+  },
+  {
+    "stratum": "ordinary",
+    "case": [
+      "amber",
+      false,
+      "helicopter"
+    ]
+  },
+  {
+    "stratum": "ordinary",
+    "case": [
+      "amber",
+      true,
+      "helicopter"
+    ]
+  },
+  {
+    "stratum": "ordinary",
+    "case": [
+      "blue",
+      false,
+      "helicopter"
+    ]
+  },
+  {
+    "stratum": "ordinary",
+    "case": [
+      "blue",
+      true,
+      "helicopter"
+    ]
+  },
+  {
+    "stratum": "random",
+    "case": [
+      "amber",
+      false,
+      "ocehesdhhk"
+    ]
+  },
+  {
+    "stratum": "random",
+    "case": [
+      "amber",
+      true,
+      "ocehesdhhk"
+    ]
+  },
+  {
+    "stratum": "random",
+    "case": [
+      "blue",
+      false,
+      "ocehesdhhk"
+    ]
+  },
+  {
+    "stratum": "random",
+    "case": [
+      "blue",
+      true,
+      "ocehesdhhk"
+    ]
+  },
+  {
+    "stratum": "ordinary",
+    "case": [
+      "amber",
+      false,
+      "strawberry"
+    ]
+  },
+  {
+    "stratum": "ordinary",
+    "case": [
+      "amber",
+      true,
+      "strawberry"
+    ]
+  },
+  {
+    "stratum": "ordinary",
+    "case": [
+      "blue",
+      false,
+      "strawberry"
+    ]
+  },
+  {
+    "stratum": "ordinary",
+    "case": [
+      "blue",
+      true,
+      "strawberry"
+    ]
+  },
+  {
+    "stratum": "random",
+    "case": [
+      "amber",
+      false,
+      "fxkxedfwhq"
+    ]
+  },
+  {
+    "stratum": "random",
+    "case": [
+      "amber",
+      true,
+      "fxkxedfwhq"
+    ]
+  },
+  {
+    "stratum": "random",
+    "case": [
+      "blue",
+      false,
+      "fxkxedfwhq"
+    ]
+  },
+  {
+    "stratum": "random",
+    "case": [
+      "blue",
+      true,
+      "fxkxedfwhq"
+    ]
+  }
+]

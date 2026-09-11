@@ -1,0 +1,20 @@
+[
+  {
+    "candidate": 0,
+    "text": "Lesson: For any item, append \"-2\" if mode=amber; append \"-9\" if mode=blue. Priority (normal/urgent) determines suffix: normal \u2192 -2, urgent \u2192 -9. Assumption: Unseen combinations (e.g., non-natural items) follow the same rule unless specified.",
+    "correct": 0,
+    "total": 12
+  },
+  {
+    "candidate": 1,
+    "text": "For any item, append \"-2\" if mode=amber, \"-9\" if mode=blue. Prefix with \"dax\" for amber, \"wug\" for blue. Priority (normal/urgent) only affects suffix: normal \u2192 -2, urgent \u2192 -9. Assumption: Unseen items follow the same rule; prefix is determined solely by mode.",
+    "correct": 2,
+    "total": 12
+  },
+  {
+    "candidate": 2,
+    "text": "For any item: if mode=amber, prefix with \"dax\" and append \"-2\"; if mode=blue, prefix with \"wug\" and append \"-2\" for normal, \"-9\" for urgent. Capitalize the item name. Assumption: Unseen items follow identical rules; capitalization and suffix depend only on mode and priority.",
+    "correct": 0,
+    "total": 12
+  }
+]

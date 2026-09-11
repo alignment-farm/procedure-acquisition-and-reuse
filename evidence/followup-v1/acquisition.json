@@ -1,0 +1,98 @@
+[
+  {
+    "case": [
+      "amber",
+      false,
+      "cat"
+    ],
+    "expected": "dax CAT-2"
+  },
+  {
+    "case": [
+      "amber",
+      false,
+      "fern"
+    ],
+    "expected": "dax FERN-2"
+  },
+  {
+    "case": [
+      "amber",
+      false,
+      "oak"
+    ],
+    "expected": "dax OAK-2"
+  },
+  {
+    "case": [
+      "amber",
+      false,
+      "reed"
+    ],
+    "expected": "dax REED-2"
+  },
+  {
+    "case": [
+      "blue",
+      false,
+      "cat"
+    ],
+    "expected": "wug cat-2"
+  },
+  {
+    "case": [
+      "blue",
+      false,
+      "fern"
+    ],
+    "expected": "wug fern-2"
+  },
+  {
+    "case": [
+      "blue",
+      false,
+      "oak"
+    ],
+    "expected": "wug oak-2"
+  },
+  {
+    "case": [
+      "blue",
+      false,
+      "reed"
+    ],
+    "expected": "wug reed-2"
+  },
+  {
+    "case": [
+      "blue",
+      true,
+      "cat"
+    ],
+    "expected": "wug cat-9"
+  },
+  {
+    "case": [
+      "blue",
+      true,
+      "fern"
+    ],
+    "expected": "wug fern-9"
+  },
+  {
+    "case": [
+      "blue",
+      true,
+      "oak"
+    ],
+    "expected": "wug oak-9"
+  },
+  {
+    "case": [
+      "blue",
+      true,
+      "reed"
+    ],
+    "expected": "wug reed-9"
+  }
+]

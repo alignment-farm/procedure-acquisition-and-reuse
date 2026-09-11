@@ -1,0 +1,32 @@
+{
+  "none": {
+    "correct": 0,
+    "total": 64,
+    "ordinary_correct": 0,
+    "random_correct": 0
+  },
+  "examples": {
+    "correct": 51,
+    "total": 64,
+    "ordinary_correct": 31,
+    "random_correct": 20
+  },
+  "lesson": {
+    "correct": 8,
+    "total": 64,
+    "ordinary_correct": 4,
+    "random_correct": 4
+  },
+  "oracle": {
+    "correct": 64,
+    "total": 64,
+    "ordinary_correct": 32,
+    "random_correct": 32
+  },
+  "adapter": {
+    "correct": 28,
+    "total": 64,
+    "ordinary_correct": 13,
+    "random_correct": 15
+  }
+}
