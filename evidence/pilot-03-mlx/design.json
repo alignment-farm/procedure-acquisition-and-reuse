@@ -1,0 +1,90 @@
+{
+  "exploratory": true,
+  "cases": [
+    [
+      "amber",
+      false,
+      "planet"
+    ],
+    [
+      "amber",
+      false,
+      "silver"
+    ],
+    [
+      "amber",
+      true,
+      "planet"
+    ],
+    [
+      "amber",
+      true,
+      "silver"
+    ],
+    [
+      "blue",
+      false,
+      "planet"
+    ],
+    [
+      "blue",
+      false,
+      "silver"
+    ],
+    [
+      "blue",
+      true,
+      "planet"
+    ],
+    [
+      "blue",
+      true,
+      "silver"
+    ]
+  ],
+  "training": [
+    [
+      "amber",
+      false,
+      "cat"
+    ],
+    [
+      "amber",
+      false,
+      "fern"
+    ],
+    [
+      "blue",
+      false,
+      "cat"
+    ],
+    [
+      "blue",
+      false,
+      "fern"
+    ],
+    [
+      "blue",
+      true,
+      "cat"
+    ],
+    [
+      "blue",
+      true,
+      "fern"
+    ]
+  ],
+  "contexts": {
+    "none": "",
+    "lesson_reversal": "For amber mode, use tool dax and reverse the item string so it reads backwards. For blue mode, use tool wug and keep the item unchanged. For urgent priority, append -9 to the transformed item; for normal priority, append -2.",
+    "lesson_upper": "For amber mode, use tool dax and write the item string in UPPERCASE. For blue mode, use tool wug and keep the item unchanged. For urgent priority, append -9 to the transformed item; for normal priority, append -2.",
+    "examples_reversal": "Checked successful interactions:\nmode=amber, priority=normal, item=cat -> dax tac-2\nmode=amber, priority=normal, item=fern -> dax nref-2\nmode=blue, priority=normal, item=cat -> wug cat-2\nmode=blue, priority=normal, item=fern -> wug fern-2\nmode=blue, priority=urgent, item=cat -> wug cat-9\nmode=blue, priority=urgent, item=fern -> wug fern-9",
+    "examples_upper": "Checked successful interactions:\nmode=amber, priority=normal, item=cat -> dax CAT-2\nmode=amber, priority=normal, item=fern -> dax FERN-2\nmode=blue, priority=normal, item=cat -> wug cat-2\nmode=blue, priority=normal, item=fern -> wug fern-2\nmode=blue, priority=urgent, item=cat -> wug cat-9\nmode=blue, priority=urgent, item=fern -> wug fern-9"
+  },
+  "schema": "Route an item using an unfamiliar two-tool protocol. Your reply must be exactly one line in the form NAME ARGUMENT, where NAME is the tool and ARGUMENT is the transformed item string. Write no other text. ",
+  "max_tokens": 96,
+  "gate": "at least 7/8 correct in a supplied-rule branch; development only",
+  "budget_seconds": 600,
+  "peak_memory_limit_bytes": 20000000000,
+  "caveat": "Cases reused from prior pilots. Oracle lessons are researcher supplied."
+}

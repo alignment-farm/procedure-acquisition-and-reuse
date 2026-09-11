@@ -1,0 +1,27 @@
+{
+  "status": "complete",
+  "error": null,
+  "load_seconds": 0.4891112910117954,
+  "seconds": 19.05567458301084,
+  "peak_mlx_bytes": 8197471864,
+  "branches": {
+    "lesson_upper": {
+      "planned": 24,
+      "completed": 24,
+      "correct": 21,
+      "errors": 0
+    },
+    "lesson_steps": {
+      "planned": 24,
+      "completed": 24,
+      "correct": 12,
+      "errors": 0
+    },
+    "uppercase_only": {
+      "planned": 6,
+      "completed": 6,
+      "correct": 6,
+      "errors": 0
+    }
+  }
+}

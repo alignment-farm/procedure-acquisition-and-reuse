@@ -1,0 +1,7 @@
+Docker Model Runner is running
+
+BACKEND    STATUS         DETAILS                                                                                                  
+llama.cpp  Running        llama.cpp b9879-metal (sha256:b70706f473b4043ca3e0c32704a7fda3412b83bceef0564684187b8011230de8) 72874f5  
+diffusers  Not Installed                                                                                                           
+mlx        Not Installed  package not installed                                                                                    
+vllm       Not Installed                                                                                                           

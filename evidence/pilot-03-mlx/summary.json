@@ -1,0 +1,39 @@
+{
+  "status": "complete",
+  "error": null,
+  "load_seconds": 0.5167991660127882,
+  "seconds": 14.259544708009344,
+  "peak_mlx_bytes": 8231173912,
+  "branches": {
+    "none": {
+      "planned": 8,
+      "completed": 8,
+      "correct": 0,
+      "errors": 0
+    },
+    "lesson_reversal": {
+      "planned": 8,
+      "completed": 8,
+      "correct": 4,
+      "errors": 0
+    },
+    "lesson_upper": {
+      "planned": 8,
+      "completed": 8,
+      "correct": 6,
+      "errors": 0
+    },
+    "examples_reversal": {
+      "planned": 8,
+      "completed": 8,
+      "correct": 4,
+      "errors": 0
+    },
+    "examples_upper": {
+      "planned": 8,
+      "completed": 8,
+      "correct": 8,
+      "errors": 0
+    }
+  }
+}

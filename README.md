@@ -147,3 +147,21 @@ instructions. Examples scored 4/8, no evidence 0/8, and a supplied correct rule
 1/8 on an unfamiliar tool-argument task. Execution competence is not yet
 established; these exploratory results do not test parameter acquisition or
 repayment. No adapter has been trained in this study yet.
+
+### Handoff review — 11 September 2026
+
+The [handoff audit](notes/2026-09-11-handoff-audit.md) selects preservation and
+refactoring. It documents the partial Docker run, corrections to unsupported
+failure annotations, and repairs to the unexecuted native MLX draft. Historical
+outputs remain intact; the native checkpoint is a distinct exploratory condition.
+The repaired [native diagnostic results](evidence/pilot-03-mlx/summary.json)
+completed 40 calls: uppercase examples 8/8, supplied uppercase rule 6/8,
+reversal examples and rule each 4/8, no evidence 0/8. The declared supplied-rule
+gate remains unmet; no task adapter has been trained.
+
+The subsequent [execution diagnostic](notes/2026-09-11-execution-diagnostic.md)
+completed 54 calls: uppercase-only 6/6, original conditional rule 21/24,
+ordered-step rewrite 12/24. This locates the observed difficulty in conditional
+execution and prompt sensitivity; it does not establish parameter learning.
+The refactored runner shares independently checked task definitions and saves
+both source files with each run.

@@ -1,0 +1,9 @@
+{
+  "failed_at": "2026-09-11T05:51:16-0400",
+  "error": "HTTPError 500 from Docker Model Runner llama.cpp backend: {'error':{'code':500,'message':'Compute error.','type':'server_error'}}",
+  "rows_completed": 27,
+  "rows_total": 32,
+  "note": "Run aborted on first server error by design (runner raises). 27 scored rows in responses.jsonl; last row is the error row. Retried after backend restart as evidence/pilot-02.",
+  "root_cause": "Shared Docker Model Runner: concurrent client was running a 27B model (qwen3.8:27b-q4_k_m) with long 24-29k-token tasks; the llama.cpp Metal backend returned \"Compute error.\" (HTTP 500) for the 4B request under that load.",
+  "decision": "Development diagnostic moved to native MLX with Qwen/Qwen3-4B-Instruct-2507 (bf16) so the diagnostic and the frozen comparison share one model/runtime; this partial directory is preserved as a failure record."
+}

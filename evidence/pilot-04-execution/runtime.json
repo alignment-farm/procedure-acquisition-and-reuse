@@ -1,0 +1,11 @@
+{
+  "python": "3.13.12",
+  "packages": {
+    "mlx": "0.32.2",
+    "mlx-lm": "0.32.0",
+    "transformers": "5.17.0"
+  },
+  "mlx_lm_source": "{\"url\":\"https://github.com/ml-explore/mlx-lm.git\",\"vcs_info\":{\"vcs\":\"git\",\"commit_id\":\"86b48c461feebf87c58788655b7e57b5574b9e6d\",\"requested_revision\":\"86b48c461feebf87c58788655b7e57b5574b9e6d\"}}",
+  "seed": 17,
+  "temperature": 0.0
+}

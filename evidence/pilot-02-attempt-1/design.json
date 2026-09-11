@@ -1,0 +1,88 @@
+{
+  "exploratory": true,
+  "revision": "pilot-02: strict output contract; uppercase transformation candidate; reversal retained under the same contract",
+  "purpose": "execution-competence gate before any parameter-storage comparison; development material only",
+  "gate": "oracle-lesson branch >= 7/8 on the eight new development cases (target 8/8)",
+  "branches": [
+    "none",
+    "lesson_reversal",
+    "lesson_upper",
+    "examples_upper"
+  ],
+  "training": [
+    [
+      "amber",
+      false,
+      "cat"
+    ],
+    [
+      "amber",
+      false,
+      "fern"
+    ],
+    [
+      "blue",
+      false,
+      "cat"
+    ],
+    [
+      "blue",
+      false,
+      "fern"
+    ],
+    [
+      "blue",
+      true,
+      "cat"
+    ],
+    [
+      "blue",
+      true,
+      "fern"
+    ]
+  ],
+  "cases": [
+    [
+      "amber",
+      false,
+      "planet"
+    ],
+    [
+      "amber",
+      false,
+      "silver"
+    ],
+    [
+      "amber",
+      true,
+      "planet"
+    ],
+    [
+      "amber",
+      true,
+      "silver"
+    ],
+    [
+      "blue",
+      false,
+      "planet"
+    ],
+    [
+      "blue",
+      false,
+      "silver"
+    ],
+    [
+      "blue",
+      true,
+      "planet"
+    ],
+    [
+      "blue",
+      true,
+      "silver"
+    ]
+  ],
+  "limit": 96,
+  "temperature": 0
+}

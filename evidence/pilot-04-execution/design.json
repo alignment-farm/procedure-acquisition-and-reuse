@@ -1,0 +1,629 @@
+{
+  "suite": "execution",
+  "exploratory": true,
+  "training": [
+    [
+      "amber",
+      false,
+      "cat"
+    ],
+    [
+      "amber",
+      false,
+      "fern"
+    ],
+    [
+      "blue",
+      false,
+      "cat"
+    ],
+    [
+      "blue",
+      false,
+      "fern"
+    ],
+    [
+      "blue",
+      true,
+      "cat"
+    ],
+    [
+      "blue",
+      true,
+      "fern"
+    ]
+  ],
+  "contexts": {
+    "lesson_upper": "For amber mode, use tool dax and write the item string in UPPERCASE. For blue mode, use tool wug and keep the item unchanged. For urgent priority, append -9 to the transformed item; for normal priority, append -2.",
+    "lesson_steps": "Compute the call in this order:\n1. Read the value of item. If mode=amber, uppercase that value and choose dax. If mode=blue, leave that value unchanged and choose wug.\n2. Append -9 if priority=urgent, otherwise append -2.\n3. Output the chosen tool, one space, and the resulting argument."
+  },
+  "requests": [
+    {
+      "id": "lesson_upper:mode=amber, priority=normal, item=planet",
+      "branch": "lesson_upper",
+      "case": [
+        "amber",
+        false,
+        "planet"
+      ],
+      "content": "Route an item using an unfamiliar two-tool protocol. Your reply must be exactly one line in the form NAME ARGUMENT, where NAME is the tool and ARGUMENT is the transformed item string. Write no other text. \nFor amber mode, use tool dax and write the item string in UPPERCASE. For blue mode, use tool wug and keep the item unchanged. For urgent priority, append -9 to the transformed item; for normal priority, append -2.\nmode=amber, priority=normal, item=planet",
+      "expected": "dax PLANET-2"
+    },
+    {
+      "id": "lesson_steps:mode=amber, priority=normal, item=planet",
+      "branch": "lesson_steps",
+      "case": [
+        "amber",
+        false,
+        "planet"
+      ],
+      "content": "Route an item using an unfamiliar two-tool protocol. Your reply must be exactly one line in the form NAME ARGUMENT, where NAME is the tool and ARGUMENT is the transformed item string. Write no other text. \nCompute the call in this order:\n1. Read the value of item. If mode=amber, uppercase that value and choose dax. If mode=blue, leave that value unchanged and choose wug.\n2. Append -9 if priority=urgent, otherwise append -2.\n3. Output the chosen tool, one space, and the resulting argument.\nmode=amber, priority=normal, item=planet",
+      "expected": "dax PLANET-2"
+    },
+    {
+      "id": "lesson_steps:mode=amber, priority=normal, item=silver",
+      "branch": "lesson_steps",
+      "case": [
+        "amber",
+        false,
+        "silver"
+      ],
+      "content": "Route an item using an unfamiliar two-tool protocol. Your reply must be exactly one line in the form NAME ARGUMENT, where NAME is the tool and ARGUMENT is the transformed item string. Write no other text. \nCompute the call in this order:\n1. Read the value of item. If mode=amber, uppercase that value and choose dax. If mode=blue, leave that value unchanged and choose wug.\n2. Append -9 if priority=urgent, otherwise append -2.\n3. Output the chosen tool, one space, and the resulting argument.\nmode=amber, priority=normal, item=silver",
+      "expected": "dax SILVER-2"
+    },
+    {
+      "id": "lesson_upper:mode=amber, priority=normal, item=silver",
+      "branch": "lesson_upper",
+      "case": [
+        "amber",
+        false,
+        "silver"
+      ],
+      "content": "Route an item using an unfamiliar two-tool protocol. Your reply must be exactly one line in the form NAME ARGUMENT, where NAME is the tool and ARGUMENT is the transformed item string. Write no other text. \nFor amber mode, use tool dax and write the item string in UPPERCASE. For blue mode, use tool wug and keep the item unchanged. For urgent priority, append -9 to the transformed item; for normal priority, append -2.\nmode=amber, priority=normal, item=silver",
+      "expected": "dax SILVER-2"
+    },
+    {
+      "id": "lesson_upper:mode=amber, priority=normal, item=harbor",
+      "branch": "lesson_upper",
+      "case": [
+        "amber",
+        false,
+        "harbor"
+      ],
+      "content": "Route an item using an unfamiliar two-tool protocol. Your reply must be exactly one line in the form NAME ARGUMENT, where NAME is the tool and ARGUMENT is the transformed item string. Write no other text. \nFor amber mode, use tool dax and write the item string in UPPERCASE. For blue mode, use tool wug and keep the item unchanged. For urgent priority, append -9 to the transformed item; for normal priority, append -2.\nmode=amber, priority=normal, item=harbor",
+      "expected": "dax HARBOR-2"
+    },
+    {
+      "id": "lesson_steps:mode=amber, priority=normal, item=harbor",
+      "branch": "lesson_steps",
+      "case": [
+        "amber",
+        false,
+        "harbor"
+      ],
+      "content": "Route an item using an unfamiliar two-tool protocol. Your reply must be exactly one line in the form NAME ARGUMENT, where NAME is the tool and ARGUMENT is the transformed item string. Write no other text. \nCompute the call in this order:\n1. Read the value of item. If mode=amber, uppercase that value and choose dax. If mode=blue, leave that value unchanged and choose wug.\n2. Append -9 if priority=urgent, otherwise append -2.\n3. Output the chosen tool, one space, and the resulting argument.\nmode=amber, priority=normal, item=harbor",
+      "expected": "dax HARBOR-2"
+    },
+    {
+      "id": "lesson_steps:mode=amber, priority=normal, item=cobalt",
+      "branch": "lesson_steps",
+      "case": [
+        "amber",
+        false,
+        "cobalt"
+      ],
+      "content": "Route an item using an unfamiliar two-tool protocol. Your reply must be exactly one line in the form NAME ARGUMENT, where NAME is the tool and ARGUMENT is the transformed item string. Write no other text. \nCompute the call in this order:\n1. Read the value of item. If mode=amber, uppercase that value and choose dax. If mode=blue, leave that value unchanged and choose wug.\n2. Append -9 if priority=urgent, otherwise append -2.\n3. Output the chosen tool, one space, and the resulting argument.\nmode=amber, priority=normal, item=cobalt",
+      "expected": "dax COBALT-2"
+    },
+    {
+      "id": "lesson_upper:mode=amber, priority=normal, item=cobalt",
+      "branch": "lesson_upper",
+      "case": [
+        "amber",
+        false,
+        "cobalt"
+      ],
+      "content": "Route an item using an unfamiliar two-tool protocol. Your reply must be exactly one line in the form NAME ARGUMENT, where NAME is the tool and ARGUMENT is the transformed item string. Write no other text. \nFor amber mode, use tool dax and write the item string in UPPERCASE. For blue mode, use tool wug and keep the item unchanged. For urgent priority, append -9 to the transformed item; for normal priority, append -2.\nmode=amber, priority=normal, item=cobalt",
+      "expected": "dax COBALT-2"
+    },
+    {
+      "id": "lesson_upper:mode=amber, priority=normal, item=meadow",
+      "branch": "lesson_upper",
+      "case": [
+        "amber",
+        false,
+        "meadow"
+      ],
+      "content": "Route an item using an unfamiliar two-tool protocol. Your reply must be exactly one line in the form NAME ARGUMENT, where NAME is the tool and ARGUMENT is the transformed item string. Write no other text. \nFor amber mode, use tool dax and write the item string in UPPERCASE. For blue mode, use tool wug and keep the item unchanged. For urgent priority, append -9 to the transformed item; for normal priority, append -2.\nmode=amber, priority=normal, item=meadow",
+      "expected": "dax MEADOW-2"
+    },
+    {
+      "id": "lesson_steps:mode=amber, priority=normal, item=meadow",
+      "branch": "lesson_steps",
+      "case": [
+        "amber",
+        false,
+        "meadow"
+      ],
+      "content": "Route an item using an unfamiliar two-tool protocol. Your reply must be exactly one line in the form NAME ARGUMENT, where NAME is the tool and ARGUMENT is the transformed item string. Write no other text. \nCompute the call in this order:\n1. Read the value of item. If mode=amber, uppercase that value and choose dax. If mode=blue, leave that value unchanged and choose wug.\n2. Append -9 if priority=urgent, otherwise append -2.\n3. Output the chosen tool, one space, and the resulting argument.\nmode=amber, priority=normal, item=meadow",
+      "expected": "dax MEADOW-2"
+    },
+    {
+      "id": "lesson_steps:mode=amber, priority=normal, item=ticket",
+      "branch": "lesson_steps",
+      "case": [
+        "amber",
+        false,
+        "ticket"
+      ],
+      "content": "Route an item using an unfamiliar two-tool protocol. Your reply must be exactly one line in the form NAME ARGUMENT, where NAME is the tool and ARGUMENT is the transformed item string. Write no other text. \nCompute the call in this order:\n1. Read the value of item. If mode=amber, uppercase that value and choose dax. If mode=blue, leave that value unchanged and choose wug.\n2. Append -9 if priority=urgent, otherwise append -2.\n3. Output the chosen tool, one space, and the resulting argument.\nmode=amber, priority=normal, item=ticket",
+      "expected": "dax TICKET-2"
+    },
+    {
+      "id": "lesson_upper:mode=amber, priority=normal, item=ticket",
+      "branch": "lesson_upper",
+      "case": [
+        "amber",
+        false,
+        "ticket"
+      ],
+      "content": "Route an item using an unfamiliar two-tool protocol. Your reply must be exactly one line in the form NAME ARGUMENT, where NAME is the tool and ARGUMENT is the transformed item string. Write no other text. \nFor amber mode, use tool dax and write the item string in UPPERCASE. For blue mode, use tool wug and keep the item unchanged. For urgent priority, append -9 to the transformed item; for normal priority, append -2.\nmode=amber, priority=normal, item=ticket",
+      "expected": "dax TICKET-2"
+    },
+    {
+      "id": "lesson_upper:mode=amber, priority=urgent, item=planet",
+      "branch": "lesson_upper",
+      "case": [
+        "amber",
+        true,
+        "planet"
+      ],
+      "content": "Route an item using an unfamiliar two-tool protocol. Your reply must be exactly one line in the form NAME ARGUMENT, where NAME is the tool and ARGUMENT is the transformed item string. Write no other text. \nFor amber mode, use tool dax and write the item string in UPPERCASE. For blue mode, use tool wug and keep the item unchanged. For urgent priority, append -9 to the transformed item; for normal priority, append -2.\nmode=amber, priority=urgent, item=planet",
+      "expected": "dax PLANET-9"
+    },
+    {
+      "id": "lesson_steps:mode=amber, priority=urgent, item=planet",
+      "branch": "lesson_steps",
+      "case": [
+        "amber",
+        true,
+        "planet"
+      ],
+      "content": "Route an item using an unfamiliar two-tool protocol. Your reply must be exactly one line in the form NAME ARGUMENT, where NAME is the tool and ARGUMENT is the transformed item string. Write no other text. \nCompute the call in this order:\n1. Read the value of item. If mode=amber, uppercase that value and choose dax. If mode=blue, leave that value unchanged and choose wug.\n2. Append -9 if priority=urgent, otherwise append -2.\n3. Output the chosen tool, one space, and the resulting argument.\nmode=amber, priority=urgent, item=planet",
+      "expected": "dax PLANET-9"
+    },
+    {
+      "id": "lesson_steps:mode=amber, priority=urgent, item=silver",
+      "branch": "lesson_steps",
+      "case": [
+        "amber",
+        true,
+        "silver"
+      ],
+      "content": "Route an item using an unfamiliar two-tool protocol. Your reply must be exactly one line in the form NAME ARGUMENT, where NAME is the tool and ARGUMENT is the transformed item string. Write no other text. \nCompute the call in this order:\n1. Read the value of item. If mode=amber, uppercase that value and choose dax. If mode=blue, leave that value unchanged and choose wug.\n2. Append -9 if priority=urgent, otherwise append -2.\n3. Output the chosen tool, one space, and the resulting argument.\nmode=amber, priority=urgent, item=silver",
+      "expected": "dax SILVER-9"
+    },
+    {
+      "id": "lesson_upper:mode=amber, priority=urgent, item=silver",
+      "branch": "lesson_upper",
+      "case": [
+        "amber",
+        true,
+        "silver"
+      ],
+      "content": "Route an item using an unfamiliar two-tool protocol. Your reply must be exactly one line in the form NAME ARGUMENT, where NAME is the tool and ARGUMENT is the transformed item string. Write no other text. \nFor amber mode, use tool dax and write the item string in UPPERCASE. For blue mode, use tool wug and keep the item unchanged. For urgent priority, append -9 to the transformed item; for normal priority, append -2.\nmode=amber, priority=urgent, item=silver",
+      "expected": "dax SILVER-9"
+    },
+    {
+      "id": "lesson_upper:mode=amber, priority=urgent, item=harbor",
+      "branch": "lesson_upper",
+      "case": [
+        "amber",
+        true,
+        "harbor"
+      ],
+      "content": "Route an item using an unfamiliar two-tool protocol. Your reply must be exactly one line in the form NAME ARGUMENT, where NAME is the tool and ARGUMENT is the transformed item string. Write no other text. \nFor amber mode, use tool dax and write the item string in UPPERCASE. For blue mode, use tool wug and keep the item unchanged. For urgent priority, append -9 to the transformed item; for normal priority, append -2.\nmode=amber, priority=urgent, item=harbor",
+      "expected": "dax HARBOR-9"
+    },
+    {
+      "id": "lesson_steps:mode=amber, priority=urgent, item=harbor",
+      "branch": "lesson_steps",
+      "case": [
+        "amber",
+        true,
+        "harbor"
+      ],
+      "content": "Route an item using an unfamiliar two-tool protocol. Your reply must be exactly one line in the form NAME ARGUMENT, where NAME is the tool and ARGUMENT is the transformed item string. Write no other text. \nCompute the call in this order:\n1. Read the value of item. If mode=amber, uppercase that value and choose dax. If mode=blue, leave that value unchanged and choose wug.\n2. Append -9 if priority=urgent, otherwise append -2.\n3. Output the chosen tool, one space, and the resulting argument.\nmode=amber, priority=urgent, item=harbor",
+      "expected": "dax HARBOR-9"
+    },
+    {
+      "id": "lesson_steps:mode=amber, priority=urgent, item=cobalt",
+      "branch": "lesson_steps",
+      "case": [
+        "amber",
+        true,
+        "cobalt"
+      ],
+      "content": "Route an item using an unfamiliar two-tool protocol. Your reply must be exactly one line in the form NAME ARGUMENT, where NAME is the tool and ARGUMENT is the transformed item string. Write no other text. \nCompute the call in this order:\n1. Read the value of item. If mode=amber, uppercase that value and choose dax. If mode=blue, leave that value unchanged and choose wug.\n2. Append -9 if priority=urgent, otherwise append -2.\n3. Output the chosen tool, one space, and the resulting argument.\nmode=amber, priority=urgent, item=cobalt",
+      "expected": "dax COBALT-9"
+    },
+    {
+      "id": "lesson_upper:mode=amber, priority=urgent, item=cobalt",
+      "branch": "lesson_upper",
+      "case": [
+        "amber",
+        true,
+        "cobalt"
+      ],
+      "content": "Route an item using an unfamiliar two-tool protocol. Your reply must be exactly one line in the form NAME ARGUMENT, where NAME is the tool and ARGUMENT is the transformed item string. Write no other text. \nFor amber mode, use tool dax and write the item string in UPPERCASE. For blue mode, use tool wug and keep the item unchanged. For urgent priority, append -9 to the transformed item; for normal priority, append -2.\nmode=amber, priority=urgent, item=cobalt",
+      "expected": "dax COBALT-9"
+    },
+    {
+      "id": "lesson_upper:mode=amber, priority=urgent, item=meadow",
+      "branch": "lesson_upper",
+      "case": [
+        "amber",
+        true,
+        "meadow"
+      ],
+      "content": "Route an item using an unfamiliar two-tool protocol. Your reply must be exactly one line in the form NAME ARGUMENT, where NAME is the tool and ARGUMENT is the transformed item string. Write no other text. \nFor amber mode, use tool dax and write the item string in UPPERCASE. For blue mode, use tool wug and keep the item unchanged. For urgent priority, append -9 to the transformed item; for normal priority, append -2.\nmode=amber, priority=urgent, item=meadow",
+      "expected": "dax MEADOW-9"
+    },
+    {
+      "id": "lesson_steps:mode=amber, priority=urgent, item=meadow",
+      "branch": "lesson_steps",
+      "case": [
+        "amber",
+        true,
+        "meadow"
+      ],
+      "content": "Route an item using an unfamiliar two-tool protocol. Your reply must be exactly one line in the form NAME ARGUMENT, where NAME is the tool and ARGUMENT is the transformed item string. Write no other text. \nCompute the call in this order:\n1. Read the value of item. If mode=amber, uppercase that value and choose dax. If mode=blue, leave that value unchanged and choose wug.\n2. Append -9 if priority=urgent, otherwise append -2.\n3. Output the chosen tool, one space, and the resulting argument.\nmode=amber, priority=urgent, item=meadow",
+      "expected": "dax MEADOW-9"
+    },
+    {
+      "id": "lesson_steps:mode=amber, priority=urgent, item=ticket",
+      "branch": "lesson_steps",
+      "case": [
+        "amber",
+        true,
+        "ticket"
+      ],
+      "content": "Route an item using an unfamiliar two-tool protocol. Your reply must be exactly one line in the form NAME ARGUMENT, where NAME is the tool and ARGUMENT is the transformed item string. Write no other text. \nCompute the call in this order:\n1. Read the value of item. If mode=amber, uppercase that value and choose dax. If mode=blue, leave that value unchanged and choose wug.\n2. Append -9 if priority=urgent, otherwise append -2.\n3. Output the chosen tool, one space, and the resulting argument.\nmode=amber, priority=urgent, item=ticket",
+      "expected": "dax TICKET-9"
+    },
+    {
+      "id": "lesson_upper:mode=amber, priority=urgent, item=ticket",
+      "branch": "lesson_upper",
+      "case": [
+        "amber",
+        true,
+        "ticket"
+      ],
+      "content": "Route an item using an unfamiliar two-tool protocol. Your reply must be exactly one line in the form NAME ARGUMENT, where NAME is the tool and ARGUMENT is the transformed item string. Write no other text. \nFor amber mode, use tool dax and write the item string in UPPERCASE. For blue mode, use tool wug and keep the item unchanged. For urgent priority, append -9 to the transformed item; for normal priority, append -2.\nmode=amber, priority=urgent, item=ticket",
+      "expected": "dax TICKET-9"
+    },
+    {
+      "id": "lesson_upper:mode=blue, priority=normal, item=planet",
+      "branch": "lesson_upper",
+      "case": [
+        "blue",
+        false,
+        "planet"
+      ],
+      "content": "Route an item using an unfamiliar two-tool protocol. Your reply must be exactly one line in the form NAME ARGUMENT, where NAME is the tool and ARGUMENT is the transformed item string. Write no other text. \nFor amber mode, use tool dax and write the item string in UPPERCASE. For blue mode, use tool wug and keep the item unchanged. For urgent priority, append -9 to the transformed item; for normal priority, append -2.\nmode=blue, priority=normal, item=planet",
+      "expected": "wug planet-2"
+    },
+    {
+      "id": "lesson_steps:mode=blue, priority=normal, item=planet",
+      "branch": "lesson_steps",
+      "case": [
+        "blue",
+        false,
+        "planet"
+      ],
+      "content": "Route an item using an unfamiliar two-tool protocol. Your reply must be exactly one line in the form NAME ARGUMENT, where NAME is the tool and ARGUMENT is the transformed item string. Write no other text. \nCompute the call in this order:\n1. Read the value of item. If mode=amber, uppercase that value and choose dax. If mode=blue, leave that value unchanged and choose wug.\n2. Append -9 if priority=urgent, otherwise append -2.\n3. Output the chosen tool, one space, and the resulting argument.\nmode=blue, priority=normal, item=planet",
+      "expected": "wug planet-2"
+    },
+    {
+      "id": "lesson_steps:mode=blue, priority=normal, item=silver",
+      "branch": "lesson_steps",
+      "case": [
+        "blue",
+        false,
+        "silver"
+      ],
+      "content": "Route an item using an unfamiliar two-tool protocol. Your reply must be exactly one line in the form NAME ARGUMENT, where NAME is the tool and ARGUMENT is the transformed item string. Write no other text. \nCompute the call in this order:\n1. Read the value of item. If mode=amber, uppercase that value and choose dax. If mode=blue, leave that value unchanged and choose wug.\n2. Append -9 if priority=urgent, otherwise append -2.\n3. Output the chosen tool, one space, and the resulting argument.\nmode=blue, priority=normal, item=silver",
+      "expected": "wug silver-2"
+    },
+    {
+      "id": "lesson_upper:mode=blue, priority=normal, item=silver",
+      "branch": "lesson_upper",
+      "case": [
+        "blue",
+        false,
+        "silver"
+      ],
+      "content": "Route an item using an unfamiliar two-tool protocol. Your reply must be exactly one line in the form NAME ARGUMENT, where NAME is the tool and ARGUMENT is the transformed item string. Write no other text. \nFor amber mode, use tool dax and write the item string in UPPERCASE. For blue mode, use tool wug and keep the item unchanged. For urgent priority, append -9 to the transformed item; for normal priority, append -2.\nmode=blue, priority=normal, item=silver",
+      "expected": "wug silver-2"
+    },
+    {
+      "id": "lesson_upper:mode=blue, priority=normal, item=harbor",
+      "branch": "lesson_upper",
+      "case": [
+        "blue",
+        false,
+        "harbor"
+      ],
+      "content": "Route an item using an unfamiliar two-tool protocol. Your reply must be exactly one line in the form NAME ARGUMENT, where NAME is the tool and ARGUMENT is the transformed item string. Write no other text. \nFor amber mode, use tool dax and write the item string in UPPERCASE. For blue mode, use tool wug and keep the item unchanged. For urgent priority, append -9 to the transformed item; for normal priority, append -2.\nmode=blue, priority=normal, item=harbor",
+      "expected": "wug harbor-2"
+    },
+    {
+      "id": "lesson_steps:mode=blue, priority=normal, item=harbor",
+      "branch": "lesson_steps",
+      "case": [
+        "blue",
+        false,
+        "harbor"
+      ],
+      "content": "Route an item using an unfamiliar two-tool protocol. Your reply must be exactly one line in the form NAME ARGUMENT, where NAME is the tool and ARGUMENT is the transformed item string. Write no other text. \nCompute the call in this order:\n1. Read the value of item. If mode=amber, uppercase that value and choose dax. If mode=blue, leave that value unchanged and choose wug.\n2. Append -9 if priority=urgent, otherwise append -2.\n3. Output the chosen tool, one space, and the resulting argument.\nmode=blue, priority=normal, item=harbor",
+      "expected": "wug harbor-2"
+    },
+    {
+      "id": "lesson_steps:mode=blue, priority=normal, item=cobalt",
+      "branch": "lesson_steps",
+      "case": [
+        "blue",
+        false,
+        "cobalt"
+      ],
+      "content": "Route an item using an unfamiliar two-tool protocol. Your reply must be exactly one line in the form NAME ARGUMENT, where NAME is the tool and ARGUMENT is the transformed item string. Write no other text. \nCompute the call in this order:\n1. Read the value of item. If mode=amber, uppercase that value and choose dax. If mode=blue, leave that value unchanged and choose wug.\n2. Append -9 if priority=urgent, otherwise append -2.\n3. Output the chosen tool, one space, and the resulting argument.\nmode=blue, priority=normal, item=cobalt",
+      "expected": "wug cobalt-2"
+    },
+    {
+      "id": "lesson_upper:mode=blue, priority=normal, item=cobalt",
+      "branch": "lesson_upper",
+      "case": [
+        "blue",
+        false,
+        "cobalt"
+      ],
+      "content": "Route an item using an unfamiliar two-tool protocol. Your reply must be exactly one line in the form NAME ARGUMENT, where NAME is the tool and ARGUMENT is the transformed item string. Write no other text. \nFor amber mode, use tool dax and write the item string in UPPERCASE. For blue mode, use tool wug and keep the item unchanged. For urgent priority, append -9 to the transformed item; for normal priority, append -2.\nmode=blue, priority=normal, item=cobalt",
+      "expected": "wug cobalt-2"
+    },
+    {
+      "id": "lesson_upper:mode=blue, priority=normal, item=meadow",
+      "branch": "lesson_upper",
+      "case": [
+        "blue",
+        false,
+        "meadow"
+      ],
+      "content": "Route an item using an unfamiliar two-tool protocol. Your reply must be exactly one line in the form NAME ARGUMENT, where NAME is the tool and ARGUMENT is the transformed item string. Write no other text. \nFor amber mode, use tool dax and write the item string in UPPERCASE. For blue mode, use tool wug and keep the item unchanged. For urgent priority, append -9 to the transformed item; for normal priority, append -2.\nmode=blue, priority=normal, item=meadow",
+      "expected": "wug meadow-2"
+    },
+    {
+      "id": "lesson_steps:mode=blue, priority=normal, item=meadow",
+      "branch": "lesson_steps",
+      "case": [
+        "blue",
+        false,
+        "meadow"
+      ],
+      "content": "Route an item using an unfamiliar two-tool protocol. Your reply must be exactly one line in the form NAME ARGUMENT, where NAME is the tool and ARGUMENT is the transformed item string. Write no other text. \nCompute the call in this order:\n1. Read the value of item. If mode=amber, uppercase that value and choose dax. If mode=blue, leave that value unchanged and choose wug.\n2. Append -9 if priority=urgent, otherwise append -2.\n3. Output the chosen tool, one space, and the resulting argument.\nmode=blue, priority=normal, item=meadow",
+      "expected": "wug meadow-2"
+    },
+    {
+      "id": "lesson_steps:mode=blue, priority=normal, item=ticket",
+      "branch": "lesson_steps",
+      "case": [
+        "blue",
+        false,
+        "ticket"
+      ],
+      "content": "Route an item using an unfamiliar two-tool protocol. Your reply must be exactly one line in the form NAME ARGUMENT, where NAME is the tool and ARGUMENT is the transformed item string. Write no other text. \nCompute the call in this order:\n1. Read the value of item. If mode=amber, uppercase that value and choose dax. If mode=blue, leave that value unchanged and choose wug.\n2. Append -9 if priority=urgent, otherwise append -2.\n3. Output the chosen tool, one space, and the resulting argument.\nmode=blue, priority=normal, item=ticket",
+      "expected": "wug ticket-2"
+    },
+    {
+      "id": "lesson_upper:mode=blue, priority=normal, item=ticket",
+      "branch": "lesson_upper",
+      "case": [
+        "blue",
+        false,
+        "ticket"
+      ],
+      "content": "Route an item using an unfamiliar two-tool protocol. Your reply must be exactly one line in the form NAME ARGUMENT, where NAME is the tool and ARGUMENT is the transformed item string. Write no other text. \nFor amber mode, use tool dax and write the item string in UPPERCASE. For blue mode, use tool wug and keep the item unchanged. For urgent priority, append -9 to the transformed item; for normal priority, append -2.\nmode=blue, priority=normal, item=ticket",
+      "expected": "wug ticket-2"
+    },
+    {
+      "id": "lesson_upper:mode=blue, priority=urgent, item=planet",
+      "branch": "lesson_upper",
+      "case": [
+        "blue",
+        true,
+        "planet"
+      ],
+      "content": "Route an item using an unfamiliar two-tool protocol. Your reply must be exactly one line in the form NAME ARGUMENT, where NAME is the tool and ARGUMENT is the transformed item string. Write no other text. \nFor amber mode, use tool dax and write the item string in UPPERCASE. For blue mode, use tool wug and keep the item unchanged. For urgent priority, append -9 to the transformed item; for normal priority, append -2.\nmode=blue, priority=urgent, item=planet",
+      "expected": "wug planet-9"
+    },
+    {
+      "id": "lesson_steps:mode=blue, priority=urgent, item=planet",
+      "branch": "lesson_steps",
+      "case": [
+        "blue",
+        true,
+        "planet"
+      ],
+      "content": "Route an item using an unfamiliar two-tool protocol. Your reply must be exactly one line in the form NAME ARGUMENT, where NAME is the tool and ARGUMENT is the transformed item string. Write no other text. \nCompute the call in this order:\n1. Read the value of item. If mode=amber, uppercase that value and choose dax. If mode=blue, leave that value unchanged and choose wug.\n2. Append -9 if priority=urgent, otherwise append -2.\n3. Output the chosen tool, one space, and the resulting argument.\nmode=blue, priority=urgent, item=planet",
+      "expected": "wug planet-9"
+    },
+    {
+      "id": "lesson_steps:mode=blue, priority=urgent, item=silver",
+      "branch": "lesson_steps",
+      "case": [
+        "blue",
+        true,
+        "silver"
+      ],
+      "content": "Route an item using an unfamiliar two-tool protocol. Your reply must be exactly one line in the form NAME ARGUMENT, where NAME is the tool and ARGUMENT is the transformed item string. Write no other text. \nCompute the call in this order:\n1. Read the value of item. If mode=amber, uppercase that value and choose dax. If mode=blue, leave that value unchanged and choose wug.\n2. Append -9 if priority=urgent, otherwise append -2.\n3. Output the chosen tool, one space, and the resulting argument.\nmode=blue, priority=urgent, item=silver",
+      "expected": "wug silver-9"
+    },
+    {
+      "id": "lesson_upper:mode=blue, priority=urgent, item=silver",
+      "branch": "lesson_upper",
+      "case": [
+        "blue",
+        true,
+        "silver"
+      ],
+      "content": "Route an item using an unfamiliar two-tool protocol. Your reply must be exactly one line in the form NAME ARGUMENT, where NAME is the tool and ARGUMENT is the transformed item string. Write no other text. \nFor amber mode, use tool dax and write the item string in UPPERCASE. For blue mode, use tool wug and keep the item unchanged. For urgent priority, append -9 to the transformed item; for normal priority, append -2.\nmode=blue, priority=urgent, item=silver",
+      "expected": "wug silver-9"
+    },
+    {
+      "id": "lesson_upper:mode=blue, priority=urgent, item=harbor",
+      "branch": "lesson_upper",
+      "case": [
+        "blue",
+        true,
+        "harbor"
+      ],
+      "content": "Route an item using an unfamiliar two-tool protocol. Your reply must be exactly one line in the form NAME ARGUMENT, where NAME is the tool and ARGUMENT is the transformed item string. Write no other text. \nFor amber mode, use tool dax and write the item string in UPPERCASE. For blue mode, use tool wug and keep the item unchanged. For urgent priority, append -9 to the transformed item; for normal priority, append -2.\nmode=blue, priority=urgent, item=harbor",
+      "expected": "wug harbor-9"
+    },
+    {
+      "id": "lesson_steps:mode=blue, priority=urgent, item=harbor",
+      "branch": "lesson_steps",
+      "case": [
+        "blue",
+        true,
+        "harbor"
+      ],
+      "content": "Route an item using an unfamiliar two-tool protocol. Your reply must be exactly one line in the form NAME ARGUMENT, where NAME is the tool and ARGUMENT is the transformed item string. Write no other text. \nCompute the call in this order:\n1. Read the value of item. If mode=amber, uppercase that value and choose dax. If mode=blue, leave that value unchanged and choose wug.\n2. Append -9 if priority=urgent, otherwise append -2.\n3. Output the chosen tool, one space, and the resulting argument.\nmode=blue, priority=urgent, item=harbor",
+      "expected": "wug harbor-9"
+    },
+    {
+      "id": "lesson_steps:mode=blue, priority=urgent, item=cobalt",
+      "branch": "lesson_steps",
+      "case": [
+        "blue",
+        true,
+        "cobalt"
+      ],
+      "content": "Route an item using an unfamiliar two-tool protocol. Your reply must be exactly one line in the form NAME ARGUMENT, where NAME is the tool and ARGUMENT is the transformed item string. Write no other text. \nCompute the call in this order:\n1. Read the value of item. If mode=amber, uppercase that value and choose dax. If mode=blue, leave that value unchanged and choose wug.\n2. Append -9 if priority=urgent, otherwise append -2.\n3. Output the chosen tool, one space, and the resulting argument.\nmode=blue, priority=urgent, item=cobalt",
+      "expected": "wug cobalt-9"
+    },
+    {
+      "id": "lesson_upper:mode=blue, priority=urgent, item=cobalt",
+      "branch": "lesson_upper",
+      "case": [
+        "blue",
+        true,
+        "cobalt"
+      ],
+      "content": "Route an item using an unfamiliar two-tool protocol. Your reply must be exactly one line in the form NAME ARGUMENT, where NAME is the tool and ARGUMENT is the transformed item string. Write no other text. \nFor amber mode, use tool dax and write the item string in UPPERCASE. For blue mode, use tool wug and keep the item unchanged. For urgent priority, append -9 to the transformed item; for normal priority, append -2.\nmode=blue, priority=urgent, item=cobalt",
+      "expected": "wug cobalt-9"
+    },
+    {
+      "id": "lesson_upper:mode=blue, priority=urgent, item=meadow",
+      "branch": "lesson_upper",
+      "case": [
+        "blue",
+        true,
+        "meadow"
+      ],
+      "content": "Route an item using an unfamiliar two-tool protocol. Your reply must be exactly one line in the form NAME ARGUMENT, where NAME is the tool and ARGUMENT is the transformed item string. Write no other text. \nFor amber mode, use tool dax and write the item string in UPPERCASE. For blue mode, use tool wug and keep the item unchanged. For urgent priority, append -9 to the transformed item; for normal priority, append -2.\nmode=blue, priority=urgent, item=meadow",
+      "expected": "wug meadow-9"
+    },
+    {
+      "id": "lesson_steps:mode=blue, priority=urgent, item=meadow",
+      "branch": "lesson_steps",
+      "case": [
+        "blue",
+        true,
+        "meadow"
+      ],
+      "content": "Route an item using an unfamiliar two-tool protocol. Your reply must be exactly one line in the form NAME ARGUMENT, where NAME is the tool and ARGUMENT is the transformed item string. Write no other text. \nCompute the call in this order:\n1. Read the value of item. If mode=amber, uppercase that value and choose dax. If mode=blue, leave that value unchanged and choose wug.\n2. Append -9 if priority=urgent, otherwise append -2.\n3. Output the chosen tool, one space, and the resulting argument.\nmode=blue, priority=urgent, item=meadow",
+      "expected": "wug meadow-9"
+    },
+    {
+      "id": "lesson_steps:mode=blue, priority=urgent, item=ticket",
+      "branch": "lesson_steps",
+      "case": [
+        "blue",
+        true,
+        "ticket"
+      ],
+      "content": "Route an item using an unfamiliar two-tool protocol. Your reply must be exactly one line in the form NAME ARGUMENT, where NAME is the tool and ARGUMENT is the transformed item string. Write no other text. \nCompute the call in this order:\n1. Read the value of item. If mode=amber, uppercase that value and choose dax. If mode=blue, leave that value unchanged and choose wug.\n2. Append -9 if priority=urgent, otherwise append -2.\n3. Output the chosen tool, one space, and the resulting argument.\nmode=blue, priority=urgent, item=ticket",
+      "expected": "wug ticket-9"
+    },
+    {
+      "id": "lesson_upper:mode=blue, priority=urgent, item=ticket",
+      "branch": "lesson_upper",
+      "case": [
+        "blue",
+        true,
+        "ticket"
+      ],
+      "content": "Route an item using an unfamiliar two-tool protocol. Your reply must be exactly one line in the form NAME ARGUMENT, where NAME is the tool and ARGUMENT is the transformed item string. Write no other text. \nFor amber mode, use tool dax and write the item string in UPPERCASE. For blue mode, use tool wug and keep the item unchanged. For urgent priority, append -9 to the transformed item; for normal priority, append -2.\nmode=blue, priority=urgent, item=ticket",
+      "expected": "wug ticket-9"
+    },
+    {
+      "id": "uppercase_only:planet",
+      "branch": "uppercase_only",
+      "case": [
+        "planet"
+      ],
+      "content": "Convert the string planet to uppercase. Output only the converted string.",
+      "expected": "PLANET"
+    },
+    {
+      "id": "uppercase_only:silver",
+      "branch": "uppercase_only",
+      "case": [
+        "silver"
+      ],
+      "content": "Convert the string silver to uppercase. Output only the converted string.",
+      "expected": "SILVER"
+    },
+    {
+      "id": "uppercase_only:harbor",
+      "branch": "uppercase_only",
+      "case": [
+        "harbor"
+      ],
+      "content": "Convert the string harbor to uppercase. Output only the converted string.",
+      "expected": "HARBOR"
+    },
+    {
+      "id": "uppercase_only:cobalt",
+      "branch": "uppercase_only",
+      "case": [
+        "cobalt"
+      ],
+      "content": "Convert the string cobalt to uppercase. Output only the converted string.",
+      "expected": "COBALT"
+    },
+    {
+      "id": "uppercase_only:meadow",
+      "branch": "uppercase_only",
+      "case": [
+        "meadow"
+      ],
+      "content": "Convert the string meadow to uppercase. Output only the converted string.",
+      "expected": "MEADOW"
+    },
+    {
+      "id": "uppercase_only:ticket",
+      "branch": "uppercase_only",
+      "case": [
+        "ticket"
+      ],
+      "content": "Convert the string ticket to uppercase. Output only the converted string.",
+      "expected": "TICKET"
+    }
+  ],
+  "gate": "Exploratory screening only; no prospective holdout or acquisition claim",
+  "caveat": "Oracle rules are researcher supplied; prior words reused; execution suite adds four development words.",
+  "max_tokens": 96,
+  "budget_seconds": 600,
+  "peak_memory_limit_bytes": 20000000000
+}
