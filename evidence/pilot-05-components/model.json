@@ -1,0 +1,57 @@
+{
+  "path": "/Users/macos-user/Developer/Projects/alignment-farm/ancillary-studies/procedure-acquisition-and-reuse/models/qwen3-4b-instruct",
+  "files": {
+    "config.json": "5beea1a4a34c62782bfb2f911c606741a3bab8f92d80a118fa053c28af12e8ba",
+    "model-00001-of-00003.safetensors": "75311d91bb08cf0b882913da464a1e722a31fb44db35208663487efb7a3d8ed6",
+    "model-00002-of-00003.safetensors": "0b48adbb1f60e901153d91907ba11ce63bd4b8b584482e730f48808d055dfba1",
+    "model-00003-of-00003.safetensors": "7dd39ccca5e4de123c74c14af44c9bf2eb75df33b4614382af0134528e060d5d",
+    "tokenizer.json": "aeb13307a71acd8fe81861d94ad54ab689df773318809eed3cbe794b4492dae4",
+    "tokenizer_config.json": "a62ff0a2472a0fa1b8eaabcb57c59b58afa42a22831dc141400b6e0cf2b65ce3"
+  },
+  "download_metadata": {
+    ".cache/huggingface/download/.gitattributes.metadata": "cdbee75f17c01a7cc42f958dc650907174af0554\n52373fe24473b1aa44333d318f578ae6bf04b49b\n1789121882.5332239\n",
+    ".cache/huggingface/download/model.safetensors.index.json.metadata": "cdbee75f17c01a7cc42f958dc650907174af0554\n4747b0297d3109f14db49886972e3369c9a00b2a\n1789121882.743977\n",
+    ".cache/huggingface/download/tokenizer_config.json.metadata": "cdbee75f17c01a7cc42f958dc650907174af0554\n51c1be0d9192e7f6e6596de71d0f07d58fbc32ac\n1789121882.746509\n",
+    ".cache/huggingface/download/config.json.metadata": "cdbee75f17c01a7cc42f958dc650907174af0554\n6988f134db143052042f2bd6e0c897bc6a605189\n1789121882.536789\n",
+    ".cache/huggingface/download/model-00001-of-00003.safetensors.metadata": "cdbee75f17c01a7cc42f958dc650907174af0554\n75311d91bb08cf0b882913da464a1e722a31fb44db35208663487efb7a3d8ed6\n1789122114.4985468\n",
+    ".cache/huggingface/download/merges.txt.metadata": "cdbee75f17c01a7cc42f958dc650907174af0554\n20024bfe7c83998e9aeaf98a0cd6a2ce6306c2f0\n1789121882.7398121\n",
+    ".cache/huggingface/download/model-00002-of-00003.safetensors.metadata": "cdbee75f17c01a7cc42f958dc650907174af0554\n0b48adbb1f60e901153d91907ba11ce63bd4b8b584482e730f48808d055dfba1\n1789122117.4303691\n",
+    ".cache/huggingface/download/tokenizer.json.metadata": "cdbee75f17c01a7cc42f958dc650907174af0554\naeb13307a71acd8fe81861d94ad54ab689df773318809eed3cbe794b4492dae4\n1789121889.7402282\n",
+    ".cache/huggingface/download/generation_config.json.metadata": "cdbee75f17c01a7cc42f958dc650907174af0554\n432531a002c181a19de338313d2375e9d7494d7e\n1789121882.522366\n",
+    ".cache/huggingface/download/LICENSE.metadata": "cdbee75f17c01a7cc42f958dc650907174af0554\n6634c8cc3133b3848ec74b9f275acaaa1ea618ab\n1789121882.516617\n",
+    ".cache/huggingface/download/model-00003-of-00003.safetensors.metadata": "cdbee75f17c01a7cc42f958dc650907174af0554\n7dd39ccca5e4de123c74c14af44c9bf2eb75df33b4614382af0134528e060d5d\n1789121890.916218\n",
+    ".cache/huggingface/download/vocab.json.metadata": "cdbee75f17c01a7cc42f958dc650907174af0554\n4783fe10ac3adce15ac8f358ef5462739852c569\n1789121883.062499\n",
+    ".cache/huggingface/download/README.md.metadata": "cdbee75f17c01a7cc42f958dc650907174af0554\nb85879f8e465b5b02bd7ea13dd7ffaf22816bf59\n1789121882.3152902\n"
+  },
+  "config": {
+    "architectures": [
+      "Qwen3ForCausalLM"
+    ],
+    "attention_bias": false,
+    "attention_dropout": 0.0,
+    "bos_token_id": 151643,
+    "eos_token_id": 151645,
+    "head_dim": 128,
+    "hidden_act": "silu",
+    "hidden_size": 2560,
+    "initializer_range": 0.02,
+    "intermediate_size": 9728,
+    "max_position_embeddings": 262144,
+    "max_window_layers": 36,
+    "model_type": "qwen3",
+    "num_attention_heads": 32,
+    "num_hidden_layers": 36,
+    "num_key_value_heads": 8,
+    "rms_norm_eps": 1e-06,
+    "rope_scaling": null,
+    "rope_theta": 5000000,
+    "sliding_window": null,
+    "tie_word_embeddings": true,
+    "torch_dtype": "bfloat16",
+    "transformers_version": "4.51.0",
+    "use_cache": true,
+    "use_sliding_window": false,
+    "vocab_size": 151936
+  },
+  "caveat": "Not established to be the same checkpoint as the Docker GGUF; no cross-runtime causal comparison."
+}

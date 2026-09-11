@@ -1,0 +1,45 @@
+{
+  "status": "complete",
+  "error": null,
+  "load_seconds": 0.497459499980323,
+  "seconds": 39.2197785419994,
+  "peak_mlx_bytes": 8186723912,
+  "branches": {
+    "routing": {
+      "planned": 24,
+      "completed": 24,
+      "correct": 24,
+      "errors": 0
+    },
+    "transformation": {
+      "planned": 24,
+      "completed": 24,
+      "correct": 24,
+      "errors": 0
+    },
+    "suffix": {
+      "planned": 24,
+      "completed": 24,
+      "correct": 24,
+      "errors": 0
+    },
+    "formatting": {
+      "planned": 24,
+      "completed": 24,
+      "correct": 24,
+      "errors": 0
+    },
+    "full_original": {
+      "planned": 24,
+      "completed": 24,
+      "correct": 21,
+      "errors": 0
+    },
+    "full_table": {
+      "planned": 24,
+      "completed": 24,
+      "correct": 22,
+      "errors": 0
+    }
+  }
+}

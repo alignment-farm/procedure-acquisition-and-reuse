@@ -165,3 +165,10 @@ ordered-step rewrite 12/24. This locates the observed difficulty in conditional
 execution and prompt sensitivity; it does not establish parameter learning.
 The refactored runner shares independently checked task definitions and saves
 both source files with each run.
+
+The [component diagnostic](notes/2026-09-11-components.md) completed 144 calls:
+routing, conditional transformation, suffix selection and formatting each passed
+24/24 in isolation; complete instructions scored 21/24 (original) and 22/24
+(table). We retain the original interface and stop prompt search. Residual
+composition errors will be measured in the acquisition comparison rather than
+requiring perfect supplied-rule execution before proceeding.

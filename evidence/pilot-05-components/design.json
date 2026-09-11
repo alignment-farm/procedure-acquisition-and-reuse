@@ -1,0 +1,1595 @@
+{
+  "suite": "components",
+  "exploratory": true,
+  "requests": [
+    {
+      "id": "routing:mode=amber, priority=normal, item=planet",
+      "branch": "routing",
+      "case": [
+        "amber",
+        false,
+        "planet"
+      ],
+      "content": "If mode=amber, choose dax. If mode=blue, choose wug. Output only the tool name.\nmode=amber, priority=normal, item=planet",
+      "expected": "dax"
+    },
+    {
+      "id": "transformation:mode=amber, priority=normal, item=planet",
+      "branch": "transformation",
+      "case": [
+        "amber",
+        false,
+        "planet"
+      ],
+      "content": "If mode=amber, uppercase the item value. If mode=blue, keep the item value unchanged. Output only the resulting item.\nmode=amber, priority=normal, item=planet",
+      "expected": "PLANET"
+    },
+    {
+      "id": "suffix:mode=amber, priority=normal, item=planet",
+      "branch": "suffix",
+      "case": [
+        "amber",
+        false,
+        "planet"
+      ],
+      "content": "If priority=urgent, choose -9. If priority=normal, choose -2. Output only the suffix.\nmode=amber, priority=normal, item=planet",
+      "expected": "-2"
+    },
+    {
+      "id": "formatting:mode=amber, priority=normal, item=planet",
+      "branch": "formatting",
+      "case": [
+        "amber",
+        false,
+        "planet"
+      ],
+      "content": "Join the supplied tool, one space, the supplied value and the supplied suffix. There must be no space between value and suffix. Output only the joined line.\ntool=dax, value=PLANET, suffix=-2",
+      "expected": "dax PLANET-2"
+    },
+    {
+      "id": "full_original:mode=amber, priority=normal, item=planet",
+      "branch": "full_original",
+      "case": [
+        "amber",
+        false,
+        "planet"
+      ],
+      "content": "Route an item using an unfamiliar two-tool protocol. Your reply must be exactly one line in the form NAME ARGUMENT, where NAME is the tool and ARGUMENT is the transformed item string. Write no other text. \nFor amber mode, use tool dax and write the item string in UPPERCASE. For blue mode, use tool wug and keep the item unchanged. For urgent priority, append -9 to the transformed item; for normal priority, append -2.\nmode=amber, priority=normal, item=planet",
+      "expected": "dax PLANET-2"
+    },
+    {
+      "id": "full_table:mode=amber, priority=normal, item=planet",
+      "branch": "full_table",
+      "case": [
+        "amber",
+        false,
+        "planet"
+      ],
+      "content": "Route an item using an unfamiliar two-tool protocol. Your reply must be exactly one line in the form NAME ARGUMENT, where NAME is the tool and ARGUMENT is the transformed item string. Write no other text. \nProtocol table:\nmode | tool | item transformation\namber | dax | uppercase\nblue | wug | unchanged\npriority | suffix\nnormal | -2\nurgent | -9\nApply the transformation to item, append the suffix without spaces, then output tool and argument separated by one space.\nmode=amber, priority=normal, item=planet",
+      "expected": "dax PLANET-2"
+    },
+    {
+      "id": "transformation:mode=amber, priority=normal, item=silver",
+      "branch": "transformation",
+      "case": [
+        "amber",
+        false,
+        "silver"
+      ],
+      "content": "If mode=amber, uppercase the item value. If mode=blue, keep the item value unchanged. Output only the resulting item.\nmode=amber, priority=normal, item=silver",
+      "expected": "SILVER"
+    },
+    {
+      "id": "suffix:mode=amber, priority=normal, item=silver",
+      "branch": "suffix",
+      "case": [
+        "amber",
+        false,
+        "silver"
+      ],
+      "content": "If priority=urgent, choose -9. If priority=normal, choose -2. Output only the suffix.\nmode=amber, priority=normal, item=silver",
+      "expected": "-2"
+    },
+    {
+      "id": "formatting:mode=amber, priority=normal, item=silver",
+      "branch": "formatting",
+      "case": [
+        "amber",
+        false,
+        "silver"
+      ],
+      "content": "Join the supplied tool, one space, the supplied value and the supplied suffix. There must be no space between value and suffix. Output only the joined line.\ntool=dax, value=SILVER, suffix=-2",
+      "expected": "dax SILVER-2"
+    },
+    {
+      "id": "full_original:mode=amber, priority=normal, item=silver",
+      "branch": "full_original",
+      "case": [
+        "amber",
+        false,
+        "silver"
+      ],
+      "content": "Route an item using an unfamiliar two-tool protocol. Your reply must be exactly one line in the form NAME ARGUMENT, where NAME is the tool and ARGUMENT is the transformed item string. Write no other text. \nFor amber mode, use tool dax and write the item string in UPPERCASE. For blue mode, use tool wug and keep the item unchanged. For urgent priority, append -9 to the transformed item; for normal priority, append -2.\nmode=amber, priority=normal, item=silver",
+      "expected": "dax SILVER-2"
+    },
+    {
+      "id": "full_table:mode=amber, priority=normal, item=silver",
+      "branch": "full_table",
+      "case": [
+        "amber",
+        false,
+        "silver"
+      ],
+      "content": "Route an item using an unfamiliar two-tool protocol. Your reply must be exactly one line in the form NAME ARGUMENT, where NAME is the tool and ARGUMENT is the transformed item string. Write no other text. \nProtocol table:\nmode | tool | item transformation\namber | dax | uppercase\nblue | wug | unchanged\npriority | suffix\nnormal | -2\nurgent | -9\nApply the transformation to item, append the suffix without spaces, then output tool and argument separated by one space.\nmode=amber, priority=normal, item=silver",
+      "expected": "dax SILVER-2"
+    },
+    {
+      "id": "routing:mode=amber, priority=normal, item=silver",
+      "branch": "routing",
+      "case": [
+        "amber",
+        false,
+        "silver"
+      ],
+      "content": "If mode=amber, choose dax. If mode=blue, choose wug. Output only the tool name.\nmode=amber, priority=normal, item=silver",
+      "expected": "dax"
+    },
+    {
+      "id": "suffix:mode=amber, priority=normal, item=harbor",
+      "branch": "suffix",
+      "case": [
+        "amber",
+        false,
+        "harbor"
+      ],
+      "content": "If priority=urgent, choose -9. If priority=normal, choose -2. Output only the suffix.\nmode=amber, priority=normal, item=harbor",
+      "expected": "-2"
+    },
+    {
+      "id": "formatting:mode=amber, priority=normal, item=harbor",
+      "branch": "formatting",
+      "case": [
+        "amber",
+        false,
+        "harbor"
+      ],
+      "content": "Join the supplied tool, one space, the supplied value and the supplied suffix. There must be no space between value and suffix. Output only the joined line.\ntool=dax, value=HARBOR, suffix=-2",
+      "expected": "dax HARBOR-2"
+    },
+    {
+      "id": "full_original:mode=amber, priority=normal, item=harbor",
+      "branch": "full_original",
+      "case": [
+        "amber",
+        false,
+        "harbor"
+      ],
+      "content": "Route an item using an unfamiliar two-tool protocol. Your reply must be exactly one line in the form NAME ARGUMENT, where NAME is the tool and ARGUMENT is the transformed item string. Write no other text. \nFor amber mode, use tool dax and write the item string in UPPERCASE. For blue mode, use tool wug and keep the item unchanged. For urgent priority, append -9 to the transformed item; for normal priority, append -2.\nmode=amber, priority=normal, item=harbor",
+      "expected": "dax HARBOR-2"
+    },
+    {
+      "id": "full_table:mode=amber, priority=normal, item=harbor",
+      "branch": "full_table",
+      "case": [
+        "amber",
+        false,
+        "harbor"
+      ],
+      "content": "Route an item using an unfamiliar two-tool protocol. Your reply must be exactly one line in the form NAME ARGUMENT, where NAME is the tool and ARGUMENT is the transformed item string. Write no other text. \nProtocol table:\nmode | tool | item transformation\namber | dax | uppercase\nblue | wug | unchanged\npriority | suffix\nnormal | -2\nurgent | -9\nApply the transformation to item, append the suffix without spaces, then output tool and argument separated by one space.\nmode=amber, priority=normal, item=harbor",
+      "expected": "dax HARBOR-2"
+    },
+    {
+      "id": "routing:mode=amber, priority=normal, item=harbor",
+      "branch": "routing",
+      "case": [
+        "amber",
+        false,
+        "harbor"
+      ],
+      "content": "If mode=amber, choose dax. If mode=blue, choose wug. Output only the tool name.\nmode=amber, priority=normal, item=harbor",
+      "expected": "dax"
+    },
+    {
+      "id": "transformation:mode=amber, priority=normal, item=harbor",
+      "branch": "transformation",
+      "case": [
+        "amber",
+        false,
+        "harbor"
+      ],
+      "content": "If mode=amber, uppercase the item value. If mode=blue, keep the item value unchanged. Output only the resulting item.\nmode=amber, priority=normal, item=harbor",
+      "expected": "HARBOR"
+    },
+    {
+      "id": "formatting:mode=amber, priority=normal, item=cobalt",
+      "branch": "formatting",
+      "case": [
+        "amber",
+        false,
+        "cobalt"
+      ],
+      "content": "Join the supplied tool, one space, the supplied value and the supplied suffix. There must be no space between value and suffix. Output only the joined line.\ntool=dax, value=COBALT, suffix=-2",
+      "expected": "dax COBALT-2"
+    },
+    {
+      "id": "full_original:mode=amber, priority=normal, item=cobalt",
+      "branch": "full_original",
+      "case": [
+        "amber",
+        false,
+        "cobalt"
+      ],
+      "content": "Route an item using an unfamiliar two-tool protocol. Your reply must be exactly one line in the form NAME ARGUMENT, where NAME is the tool and ARGUMENT is the transformed item string. Write no other text. \nFor amber mode, use tool dax and write the item string in UPPERCASE. For blue mode, use tool wug and keep the item unchanged. For urgent priority, append -9 to the transformed item; for normal priority, append -2.\nmode=amber, priority=normal, item=cobalt",
+      "expected": "dax COBALT-2"
+    },
+    {
+      "id": "full_table:mode=amber, priority=normal, item=cobalt",
+      "branch": "full_table",
+      "case": [
+        "amber",
+        false,
+        "cobalt"
+      ],
+      "content": "Route an item using an unfamiliar two-tool protocol. Your reply must be exactly one line in the form NAME ARGUMENT, where NAME is the tool and ARGUMENT is the transformed item string. Write no other text. \nProtocol table:\nmode | tool | item transformation\namber | dax | uppercase\nblue | wug | unchanged\npriority | suffix\nnormal | -2\nurgent | -9\nApply the transformation to item, append the suffix without spaces, then output tool and argument separated by one space.\nmode=amber, priority=normal, item=cobalt",
+      "expected": "dax COBALT-2"
+    },
+    {
+      "id": "routing:mode=amber, priority=normal, item=cobalt",
+      "branch": "routing",
+      "case": [
+        "amber",
+        false,
+        "cobalt"
+      ],
+      "content": "If mode=amber, choose dax. If mode=blue, choose wug. Output only the tool name.\nmode=amber, priority=normal, item=cobalt",
+      "expected": "dax"
+    },
+    {
+      "id": "transformation:mode=amber, priority=normal, item=cobalt",
+      "branch": "transformation",
+      "case": [
+        "amber",
+        false,
+        "cobalt"
+      ],
+      "content": "If mode=amber, uppercase the item value. If mode=blue, keep the item value unchanged. Output only the resulting item.\nmode=amber, priority=normal, item=cobalt",
+      "expected": "COBALT"
+    },
+    {
+      "id": "suffix:mode=amber, priority=normal, item=cobalt",
+      "branch": "suffix",
+      "case": [
+        "amber",
+        false,
+        "cobalt"
+      ],
+      "content": "If priority=urgent, choose -9. If priority=normal, choose -2. Output only the suffix.\nmode=amber, priority=normal, item=cobalt",
+      "expected": "-2"
+    },
+    {
+      "id": "full_original:mode=amber, priority=normal, item=meadow",
+      "branch": "full_original",
+      "case": [
+        "amber",
+        false,
+        "meadow"
+      ],
+      "content": "Route an item using an unfamiliar two-tool protocol. Your reply must be exactly one line in the form NAME ARGUMENT, where NAME is the tool and ARGUMENT is the transformed item string. Write no other text. \nFor amber mode, use tool dax and write the item string in UPPERCASE. For blue mode, use tool wug and keep the item unchanged. For urgent priority, append -9 to the transformed item; for normal priority, append -2.\nmode=amber, priority=normal, item=meadow",
+      "expected": "dax MEADOW-2"
+    },
+    {
+      "id": "full_table:mode=amber, priority=normal, item=meadow",
+      "branch": "full_table",
+      "case": [
+        "amber",
+        false,
+        "meadow"
+      ],
+      "content": "Route an item using an unfamiliar two-tool protocol. Your reply must be exactly one line in the form NAME ARGUMENT, where NAME is the tool and ARGUMENT is the transformed item string. Write no other text. \nProtocol table:\nmode | tool | item transformation\namber | dax | uppercase\nblue | wug | unchanged\npriority | suffix\nnormal | -2\nurgent | -9\nApply the transformation to item, append the suffix without spaces, then output tool and argument separated by one space.\nmode=amber, priority=normal, item=meadow",
+      "expected": "dax MEADOW-2"
+    },
+    {
+      "id": "routing:mode=amber, priority=normal, item=meadow",
+      "branch": "routing",
+      "case": [
+        "amber",
+        false,
+        "meadow"
+      ],
+      "content": "If mode=amber, choose dax. If mode=blue, choose wug. Output only the tool name.\nmode=amber, priority=normal, item=meadow",
+      "expected": "dax"
+    },
+    {
+      "id": "transformation:mode=amber, priority=normal, item=meadow",
+      "branch": "transformation",
+      "case": [
+        "amber",
+        false,
+        "meadow"
+      ],
+      "content": "If mode=amber, uppercase the item value. If mode=blue, keep the item value unchanged. Output only the resulting item.\nmode=amber, priority=normal, item=meadow",
+      "expected": "MEADOW"
+    },
+    {
+      "id": "suffix:mode=amber, priority=normal, item=meadow",
+      "branch": "suffix",
+      "case": [
+        "amber",
+        false,
+        "meadow"
+      ],
+      "content": "If priority=urgent, choose -9. If priority=normal, choose -2. Output only the suffix.\nmode=amber, priority=normal, item=meadow",
+      "expected": "-2"
+    },
+    {
+      "id": "formatting:mode=amber, priority=normal, item=meadow",
+      "branch": "formatting",
+      "case": [
+        "amber",
+        false,
+        "meadow"
+      ],
+      "content": "Join the supplied tool, one space, the supplied value and the supplied suffix. There must be no space between value and suffix. Output only the joined line.\ntool=dax, value=MEADOW, suffix=-2",
+      "expected": "dax MEADOW-2"
+    },
+    {
+      "id": "full_table:mode=amber, priority=normal, item=ticket",
+      "branch": "full_table",
+      "case": [
+        "amber",
+        false,
+        "ticket"
+      ],
+      "content": "Route an item using an unfamiliar two-tool protocol. Your reply must be exactly one line in the form NAME ARGUMENT, where NAME is the tool and ARGUMENT is the transformed item string. Write no other text. \nProtocol table:\nmode | tool | item transformation\namber | dax | uppercase\nblue | wug | unchanged\npriority | suffix\nnormal | -2\nurgent | -9\nApply the transformation to item, append the suffix without spaces, then output tool and argument separated by one space.\nmode=amber, priority=normal, item=ticket",
+      "expected": "dax TICKET-2"
+    },
+    {
+      "id": "routing:mode=amber, priority=normal, item=ticket",
+      "branch": "routing",
+      "case": [
+        "amber",
+        false,
+        "ticket"
+      ],
+      "content": "If mode=amber, choose dax. If mode=blue, choose wug. Output only the tool name.\nmode=amber, priority=normal, item=ticket",
+      "expected": "dax"
+    },
+    {
+      "id": "transformation:mode=amber, priority=normal, item=ticket",
+      "branch": "transformation",
+      "case": [
+        "amber",
+        false,
+        "ticket"
+      ],
+      "content": "If mode=amber, uppercase the item value. If mode=blue, keep the item value unchanged. Output only the resulting item.\nmode=amber, priority=normal, item=ticket",
+      "expected": "TICKET"
+    },
+    {
+      "id": "suffix:mode=amber, priority=normal, item=ticket",
+      "branch": "suffix",
+      "case": [
+        "amber",
+        false,
+        "ticket"
+      ],
+      "content": "If priority=urgent, choose -9. If priority=normal, choose -2. Output only the suffix.\nmode=amber, priority=normal, item=ticket",
+      "expected": "-2"
+    },
+    {
+      "id": "formatting:mode=amber, priority=normal, item=ticket",
+      "branch": "formatting",
+      "case": [
+        "amber",
+        false,
+        "ticket"
+      ],
+      "content": "Join the supplied tool, one space, the supplied value and the supplied suffix. There must be no space between value and suffix. Output only the joined line.\ntool=dax, value=TICKET, suffix=-2",
+      "expected": "dax TICKET-2"
+    },
+    {
+      "id": "full_original:mode=amber, priority=normal, item=ticket",
+      "branch": "full_original",
+      "case": [
+        "amber",
+        false,
+        "ticket"
+      ],
+      "content": "Route an item using an unfamiliar two-tool protocol. Your reply must be exactly one line in the form NAME ARGUMENT, where NAME is the tool and ARGUMENT is the transformed item string. Write no other text. \nFor amber mode, use tool dax and write the item string in UPPERCASE. For blue mode, use tool wug and keep the item unchanged. For urgent priority, append -9 to the transformed item; for normal priority, append -2.\nmode=amber, priority=normal, item=ticket",
+      "expected": "dax TICKET-2"
+    },
+    {
+      "id": "routing:mode=amber, priority=urgent, item=planet",
+      "branch": "routing",
+      "case": [
+        "amber",
+        true,
+        "planet"
+      ],
+      "content": "If mode=amber, choose dax. If mode=blue, choose wug. Output only the tool name.\nmode=amber, priority=urgent, item=planet",
+      "expected": "dax"
+    },
+    {
+      "id": "transformation:mode=amber, priority=urgent, item=planet",
+      "branch": "transformation",
+      "case": [
+        "amber",
+        true,
+        "planet"
+      ],
+      "content": "If mode=amber, uppercase the item value. If mode=blue, keep the item value unchanged. Output only the resulting item.\nmode=amber, priority=urgent, item=planet",
+      "expected": "PLANET"
+    },
+    {
+      "id": "suffix:mode=amber, priority=urgent, item=planet",
+      "branch": "suffix",
+      "case": [
+        "amber",
+        true,
+        "planet"
+      ],
+      "content": "If priority=urgent, choose -9. If priority=normal, choose -2. Output only the suffix.\nmode=amber, priority=urgent, item=planet",
+      "expected": "-9"
+    },
+    {
+      "id": "formatting:mode=amber, priority=urgent, item=planet",
+      "branch": "formatting",
+      "case": [
+        "amber",
+        true,
+        "planet"
+      ],
+      "content": "Join the supplied tool, one space, the supplied value and the supplied suffix. There must be no space between value and suffix. Output only the joined line.\ntool=dax, value=PLANET, suffix=-9",
+      "expected": "dax PLANET-9"
+    },
+    {
+      "id": "full_original:mode=amber, priority=urgent, item=planet",
+      "branch": "full_original",
+      "case": [
+        "amber",
+        true,
+        "planet"
+      ],
+      "content": "Route an item using an unfamiliar two-tool protocol. Your reply must be exactly one line in the form NAME ARGUMENT, where NAME is the tool and ARGUMENT is the transformed item string. Write no other text. \nFor amber mode, use tool dax and write the item string in UPPERCASE. For blue mode, use tool wug and keep the item unchanged. For urgent priority, append -9 to the transformed item; for normal priority, append -2.\nmode=amber, priority=urgent, item=planet",
+      "expected": "dax PLANET-9"
+    },
+    {
+      "id": "full_table:mode=amber, priority=urgent, item=planet",
+      "branch": "full_table",
+      "case": [
+        "amber",
+        true,
+        "planet"
+      ],
+      "content": "Route an item using an unfamiliar two-tool protocol. Your reply must be exactly one line in the form NAME ARGUMENT, where NAME is the tool and ARGUMENT is the transformed item string. Write no other text. \nProtocol table:\nmode | tool | item transformation\namber | dax | uppercase\nblue | wug | unchanged\npriority | suffix\nnormal | -2\nurgent | -9\nApply the transformation to item, append the suffix without spaces, then output tool and argument separated by one space.\nmode=amber, priority=urgent, item=planet",
+      "expected": "dax PLANET-9"
+    },
+    {
+      "id": "transformation:mode=amber, priority=urgent, item=silver",
+      "branch": "transformation",
+      "case": [
+        "amber",
+        true,
+        "silver"
+      ],
+      "content": "If mode=amber, uppercase the item value. If mode=blue, keep the item value unchanged. Output only the resulting item.\nmode=amber, priority=urgent, item=silver",
+      "expected": "SILVER"
+    },
+    {
+      "id": "suffix:mode=amber, priority=urgent, item=silver",
+      "branch": "suffix",
+      "case": [
+        "amber",
+        true,
+        "silver"
+      ],
+      "content": "If priority=urgent, choose -9. If priority=normal, choose -2. Output only the suffix.\nmode=amber, priority=urgent, item=silver",
+      "expected": "-9"
+    },
+    {
+      "id": "formatting:mode=amber, priority=urgent, item=silver",
+      "branch": "formatting",
+      "case": [
+        "amber",
+        true,
+        "silver"
+      ],
+      "content": "Join the supplied tool, one space, the supplied value and the supplied suffix. There must be no space between value and suffix. Output only the joined line.\ntool=dax, value=SILVER, suffix=-9",
+      "expected": "dax SILVER-9"
+    },
+    {
+      "id": "full_original:mode=amber, priority=urgent, item=silver",
+      "branch": "full_original",
+      "case": [
+        "amber",
+        true,
+        "silver"
+      ],
+      "content": "Route an item using an unfamiliar two-tool protocol. Your reply must be exactly one line in the form NAME ARGUMENT, where NAME is the tool and ARGUMENT is the transformed item string. Write no other text. \nFor amber mode, use tool dax and write the item string in UPPERCASE. For blue mode, use tool wug and keep the item unchanged. For urgent priority, append -9 to the transformed item; for normal priority, append -2.\nmode=amber, priority=urgent, item=silver",
+      "expected": "dax SILVER-9"
+    },
+    {
+      "id": "full_table:mode=amber, priority=urgent, item=silver",
+      "branch": "full_table",
+      "case": [
+        "amber",
+        true,
+        "silver"
+      ],
+      "content": "Route an item using an unfamiliar two-tool protocol. Your reply must be exactly one line in the form NAME ARGUMENT, where NAME is the tool and ARGUMENT is the transformed item string. Write no other text. \nProtocol table:\nmode | tool | item transformation\namber | dax | uppercase\nblue | wug | unchanged\npriority | suffix\nnormal | -2\nurgent | -9\nApply the transformation to item, append the suffix without spaces, then output tool and argument separated by one space.\nmode=amber, priority=urgent, item=silver",
+      "expected": "dax SILVER-9"
+    },
+    {
+      "id": "routing:mode=amber, priority=urgent, item=silver",
+      "branch": "routing",
+      "case": [
+        "amber",
+        true,
+        "silver"
+      ],
+      "content": "If mode=amber, choose dax. If mode=blue, choose wug. Output only the tool name.\nmode=amber, priority=urgent, item=silver",
+      "expected": "dax"
+    },
+    {
+      "id": "suffix:mode=amber, priority=urgent, item=harbor",
+      "branch": "suffix",
+      "case": [
+        "amber",
+        true,
+        "harbor"
+      ],
+      "content": "If priority=urgent, choose -9. If priority=normal, choose -2. Output only the suffix.\nmode=amber, priority=urgent, item=harbor",
+      "expected": "-9"
+    },
+    {
+      "id": "formatting:mode=amber, priority=urgent, item=harbor",
+      "branch": "formatting",
+      "case": [
+        "amber",
+        true,
+        "harbor"
+      ],
+      "content": "Join the supplied tool, one space, the supplied value and the supplied suffix. There must be no space between value and suffix. Output only the joined line.\ntool=dax, value=HARBOR, suffix=-9",
+      "expected": "dax HARBOR-9"
+    },
+    {
+      "id": "full_original:mode=amber, priority=urgent, item=harbor",
+      "branch": "full_original",
+      "case": [
+        "amber",
+        true,
+        "harbor"
+      ],
+      "content": "Route an item using an unfamiliar two-tool protocol. Your reply must be exactly one line in the form NAME ARGUMENT, where NAME is the tool and ARGUMENT is the transformed item string. Write no other text. \nFor amber mode, use tool dax and write the item string in UPPERCASE. For blue mode, use tool wug and keep the item unchanged. For urgent priority, append -9 to the transformed item; for normal priority, append -2.\nmode=amber, priority=urgent, item=harbor",
+      "expected": "dax HARBOR-9"
+    },
+    {
+      "id": "full_table:mode=amber, priority=urgent, item=harbor",
+      "branch": "full_table",
+      "case": [
+        "amber",
+        true,
+        "harbor"
+      ],
+      "content": "Route an item using an unfamiliar two-tool protocol. Your reply must be exactly one line in the form NAME ARGUMENT, where NAME is the tool and ARGUMENT is the transformed item string. Write no other text. \nProtocol table:\nmode | tool | item transformation\namber | dax | uppercase\nblue | wug | unchanged\npriority | suffix\nnormal | -2\nurgent | -9\nApply the transformation to item, append the suffix without spaces, then output tool and argument separated by one space.\nmode=amber, priority=urgent, item=harbor",
+      "expected": "dax HARBOR-9"
+    },
+    {
+      "id": "routing:mode=amber, priority=urgent, item=harbor",
+      "branch": "routing",
+      "case": [
+        "amber",
+        true,
+        "harbor"
+      ],
+      "content": "If mode=amber, choose dax. If mode=blue, choose wug. Output only the tool name.\nmode=amber, priority=urgent, item=harbor",
+      "expected": "dax"
+    },
+    {
+      "id": "transformation:mode=amber, priority=urgent, item=harbor",
+      "branch": "transformation",
+      "case": [
+        "amber",
+        true,
+        "harbor"
+      ],
+      "content": "If mode=amber, uppercase the item value. If mode=blue, keep the item value unchanged. Output only the resulting item.\nmode=amber, priority=urgent, item=harbor",
+      "expected": "HARBOR"
+    },
+    {
+      "id": "formatting:mode=amber, priority=urgent, item=cobalt",
+      "branch": "formatting",
+      "case": [
+        "amber",
+        true,
+        "cobalt"
+      ],
+      "content": "Join the supplied tool, one space, the supplied value and the supplied suffix. There must be no space between value and suffix. Output only the joined line.\ntool=dax, value=COBALT, suffix=-9",
+      "expected": "dax COBALT-9"
+    },
+    {
+      "id": "full_original:mode=amber, priority=urgent, item=cobalt",
+      "branch": "full_original",
+      "case": [
+        "amber",
+        true,
+        "cobalt"
+      ],
+      "content": "Route an item using an unfamiliar two-tool protocol. Your reply must be exactly one line in the form NAME ARGUMENT, where NAME is the tool and ARGUMENT is the transformed item string. Write no other text. \nFor amber mode, use tool dax and write the item string in UPPERCASE. For blue mode, use tool wug and keep the item unchanged. For urgent priority, append -9 to the transformed item; for normal priority, append -2.\nmode=amber, priority=urgent, item=cobalt",
+      "expected": "dax COBALT-9"
+    },
+    {
+      "id": "full_table:mode=amber, priority=urgent, item=cobalt",
+      "branch": "full_table",
+      "case": [
+        "amber",
+        true,
+        "cobalt"
+      ],
+      "content": "Route an item using an unfamiliar two-tool protocol. Your reply must be exactly one line in the form NAME ARGUMENT, where NAME is the tool and ARGUMENT is the transformed item string. Write no other text. \nProtocol table:\nmode | tool | item transformation\namber | dax | uppercase\nblue | wug | unchanged\npriority | suffix\nnormal | -2\nurgent | -9\nApply the transformation to item, append the suffix without spaces, then output tool and argument separated by one space.\nmode=amber, priority=urgent, item=cobalt",
+      "expected": "dax COBALT-9"
+    },
+    {
+      "id": "routing:mode=amber, priority=urgent, item=cobalt",
+      "branch": "routing",
+      "case": [
+        "amber",
+        true,
+        "cobalt"
+      ],
+      "content": "If mode=amber, choose dax. If mode=blue, choose wug. Output only the tool name.\nmode=amber, priority=urgent, item=cobalt",
+      "expected": "dax"
+    },
+    {
+      "id": "transformation:mode=amber, priority=urgent, item=cobalt",
+      "branch": "transformation",
+      "case": [
+        "amber",
+        true,
+        "cobalt"
+      ],
+      "content": "If mode=amber, uppercase the item value. If mode=blue, keep the item value unchanged. Output only the resulting item.\nmode=amber, priority=urgent, item=cobalt",
+      "expected": "COBALT"
+    },
+    {
+      "id": "suffix:mode=amber, priority=urgent, item=cobalt",
+      "branch": "suffix",
+      "case": [
+        "amber",
+        true,
+        "cobalt"
+      ],
+      "content": "If priority=urgent, choose -9. If priority=normal, choose -2. Output only the suffix.\nmode=amber, priority=urgent, item=cobalt",
+      "expected": "-9"
+    },
+    {
+      "id": "full_original:mode=amber, priority=urgent, item=meadow",
+      "branch": "full_original",
+      "case": [
+        "amber",
+        true,
+        "meadow"
+      ],
+      "content": "Route an item using an unfamiliar two-tool protocol. Your reply must be exactly one line in the form NAME ARGUMENT, where NAME is the tool and ARGUMENT is the transformed item string. Write no other text. \nFor amber mode, use tool dax and write the item string in UPPERCASE. For blue mode, use tool wug and keep the item unchanged. For urgent priority, append -9 to the transformed item; for normal priority, append -2.\nmode=amber, priority=urgent, item=meadow",
+      "expected": "dax MEADOW-9"
+    },
+    {
+      "id": "full_table:mode=amber, priority=urgent, item=meadow",
+      "branch": "full_table",
+      "case": [
+        "amber",
+        true,
+        "meadow"
+      ],
+      "content": "Route an item using an unfamiliar two-tool protocol. Your reply must be exactly one line in the form NAME ARGUMENT, where NAME is the tool and ARGUMENT is the transformed item string. Write no other text. \nProtocol table:\nmode | tool | item transformation\namber | dax | uppercase\nblue | wug | unchanged\npriority | suffix\nnormal | -2\nurgent | -9\nApply the transformation to item, append the suffix without spaces, then output tool and argument separated by one space.\nmode=amber, priority=urgent, item=meadow",
+      "expected": "dax MEADOW-9"
+    },
+    {
+      "id": "routing:mode=amber, priority=urgent, item=meadow",
+      "branch": "routing",
+      "case": [
+        "amber",
+        true,
+        "meadow"
+      ],
+      "content": "If mode=amber, choose dax. If mode=blue, choose wug. Output only the tool name.\nmode=amber, priority=urgent, item=meadow",
+      "expected": "dax"
+    },
+    {
+      "id": "transformation:mode=amber, priority=urgent, item=meadow",
+      "branch": "transformation",
+      "case": [
+        "amber",
+        true,
+        "meadow"
+      ],
+      "content": "If mode=amber, uppercase the item value. If mode=blue, keep the item value unchanged. Output only the resulting item.\nmode=amber, priority=urgent, item=meadow",
+      "expected": "MEADOW"
+    },
+    {
+      "id": "suffix:mode=amber, priority=urgent, item=meadow",
+      "branch": "suffix",
+      "case": [
+        "amber",
+        true,
+        "meadow"
+      ],
+      "content": "If priority=urgent, choose -9. If priority=normal, choose -2. Output only the suffix.\nmode=amber, priority=urgent, item=meadow",
+      "expected": "-9"
+    },
+    {
+      "id": "formatting:mode=amber, priority=urgent, item=meadow",
+      "branch": "formatting",
+      "case": [
+        "amber",
+        true,
+        "meadow"
+      ],
+      "content": "Join the supplied tool, one space, the supplied value and the supplied suffix. There must be no space between value and suffix. Output only the joined line.\ntool=dax, value=MEADOW, suffix=-9",
+      "expected": "dax MEADOW-9"
+    },
+    {
+      "id": "full_table:mode=amber, priority=urgent, item=ticket",
+      "branch": "full_table",
+      "case": [
+        "amber",
+        true,
+        "ticket"
+      ],
+      "content": "Route an item using an unfamiliar two-tool protocol. Your reply must be exactly one line in the form NAME ARGUMENT, where NAME is the tool and ARGUMENT is the transformed item string. Write no other text. \nProtocol table:\nmode | tool | item transformation\namber | dax | uppercase\nblue | wug | unchanged\npriority | suffix\nnormal | -2\nurgent | -9\nApply the transformation to item, append the suffix without spaces, then output tool and argument separated by one space.\nmode=amber, priority=urgent, item=ticket",
+      "expected": "dax TICKET-9"
+    },
+    {
+      "id": "routing:mode=amber, priority=urgent, item=ticket",
+      "branch": "routing",
+      "case": [
+        "amber",
+        true,
+        "ticket"
+      ],
+      "content": "If mode=amber, choose dax. If mode=blue, choose wug. Output only the tool name.\nmode=amber, priority=urgent, item=ticket",
+      "expected": "dax"
+    },
+    {
+      "id": "transformation:mode=amber, priority=urgent, item=ticket",
+      "branch": "transformation",
+      "case": [
+        "amber",
+        true,
+        "ticket"
+      ],
+      "content": "If mode=amber, uppercase the item value. If mode=blue, keep the item value unchanged. Output only the resulting item.\nmode=amber, priority=urgent, item=ticket",
+      "expected": "TICKET"
+    },
+    {
+      "id": "suffix:mode=amber, priority=urgent, item=ticket",
+      "branch": "suffix",
+      "case": [
+        "amber",
+        true,
+        "ticket"
+      ],
+      "content": "If priority=urgent, choose -9. If priority=normal, choose -2. Output only the suffix.\nmode=amber, priority=urgent, item=ticket",
+      "expected": "-9"
+    },
+    {
+      "id": "formatting:mode=amber, priority=urgent, item=ticket",
+      "branch": "formatting",
+      "case": [
+        "amber",
+        true,
+        "ticket"
+      ],
+      "content": "Join the supplied tool, one space, the supplied value and the supplied suffix. There must be no space between value and suffix. Output only the joined line.\ntool=dax, value=TICKET, suffix=-9",
+      "expected": "dax TICKET-9"
+    },
+    {
+      "id": "full_original:mode=amber, priority=urgent, item=ticket",
+      "branch": "full_original",
+      "case": [
+        "amber",
+        true,
+        "ticket"
+      ],
+      "content": "Route an item using an unfamiliar two-tool protocol. Your reply must be exactly one line in the form NAME ARGUMENT, where NAME is the tool and ARGUMENT is the transformed item string. Write no other text. \nFor amber mode, use tool dax and write the item string in UPPERCASE. For blue mode, use tool wug and keep the item unchanged. For urgent priority, append -9 to the transformed item; for normal priority, append -2.\nmode=amber, priority=urgent, item=ticket",
+      "expected": "dax TICKET-9"
+    },
+    {
+      "id": "routing:mode=blue, priority=normal, item=planet",
+      "branch": "routing",
+      "case": [
+        "blue",
+        false,
+        "planet"
+      ],
+      "content": "If mode=amber, choose dax. If mode=blue, choose wug. Output only the tool name.\nmode=blue, priority=normal, item=planet",
+      "expected": "wug"
+    },
+    {
+      "id": "transformation:mode=blue, priority=normal, item=planet",
+      "branch": "transformation",
+      "case": [
+        "blue",
+        false,
+        "planet"
+      ],
+      "content": "If mode=amber, uppercase the item value. If mode=blue, keep the item value unchanged. Output only the resulting item.\nmode=blue, priority=normal, item=planet",
+      "expected": "planet"
+    },
+    {
+      "id": "suffix:mode=blue, priority=normal, item=planet",
+      "branch": "suffix",
+      "case": [
+        "blue",
+        false,
+        "planet"
+      ],
+      "content": "If priority=urgent, choose -9. If priority=normal, choose -2. Output only the suffix.\nmode=blue, priority=normal, item=planet",
+      "expected": "-2"
+    },
+    {
+      "id": "formatting:mode=blue, priority=normal, item=planet",
+      "branch": "formatting",
+      "case": [
+        "blue",
+        false,
+        "planet"
+      ],
+      "content": "Join the supplied tool, one space, the supplied value and the supplied suffix. There must be no space between value and suffix. Output only the joined line.\ntool=wug, value=planet, suffix=-2",
+      "expected": "wug planet-2"
+    },
+    {
+      "id": "full_original:mode=blue, priority=normal, item=planet",
+      "branch": "full_original",
+      "case": [
+        "blue",
+        false,
+        "planet"
+      ],
+      "content": "Route an item using an unfamiliar two-tool protocol. Your reply must be exactly one line in the form NAME ARGUMENT, where NAME is the tool and ARGUMENT is the transformed item string. Write no other text. \nFor amber mode, use tool dax and write the item string in UPPERCASE. For blue mode, use tool wug and keep the item unchanged. For urgent priority, append -9 to the transformed item; for normal priority, append -2.\nmode=blue, priority=normal, item=planet",
+      "expected": "wug planet-2"
+    },
+    {
+      "id": "full_table:mode=blue, priority=normal, item=planet",
+      "branch": "full_table",
+      "case": [
+        "blue",
+        false,
+        "planet"
+      ],
+      "content": "Route an item using an unfamiliar two-tool protocol. Your reply must be exactly one line in the form NAME ARGUMENT, where NAME is the tool and ARGUMENT is the transformed item string. Write no other text. \nProtocol table:\nmode | tool | item transformation\namber | dax | uppercase\nblue | wug | unchanged\npriority | suffix\nnormal | -2\nurgent | -9\nApply the transformation to item, append the suffix without spaces, then output tool and argument separated by one space.\nmode=blue, priority=normal, item=planet",
+      "expected": "wug planet-2"
+    },
+    {
+      "id": "transformation:mode=blue, priority=normal, item=silver",
+      "branch": "transformation",
+      "case": [
+        "blue",
+        false,
+        "silver"
+      ],
+      "content": "If mode=amber, uppercase the item value. If mode=blue, keep the item value unchanged. Output only the resulting item.\nmode=blue, priority=normal, item=silver",
+      "expected": "silver"
+    },
+    {
+      "id": "suffix:mode=blue, priority=normal, item=silver",
+      "branch": "suffix",
+      "case": [
+        "blue",
+        false,
+        "silver"
+      ],
+      "content": "If priority=urgent, choose -9. If priority=normal, choose -2. Output only the suffix.\nmode=blue, priority=normal, item=silver",
+      "expected": "-2"
+    },
+    {
+      "id": "formatting:mode=blue, priority=normal, item=silver",
+      "branch": "formatting",
+      "case": [
+        "blue",
+        false,
+        "silver"
+      ],
+      "content": "Join the supplied tool, one space, the supplied value and the supplied suffix. There must be no space between value and suffix. Output only the joined line.\ntool=wug, value=silver, suffix=-2",
+      "expected": "wug silver-2"
+    },
+    {
+      "id": "full_original:mode=blue, priority=normal, item=silver",
+      "branch": "full_original",
+      "case": [
+        "blue",
+        false,
+        "silver"
+      ],
+      "content": "Route an item using an unfamiliar two-tool protocol. Your reply must be exactly one line in the form NAME ARGUMENT, where NAME is the tool and ARGUMENT is the transformed item string. Write no other text. \nFor amber mode, use tool dax and write the item string in UPPERCASE. For blue mode, use tool wug and keep the item unchanged. For urgent priority, append -9 to the transformed item; for normal priority, append -2.\nmode=blue, priority=normal, item=silver",
+      "expected": "wug silver-2"
+    },
+    {
+      "id": "full_table:mode=blue, priority=normal, item=silver",
+      "branch": "full_table",
+      "case": [
+        "blue",
+        false,
+        "silver"
+      ],
+      "content": "Route an item using an unfamiliar two-tool protocol. Your reply must be exactly one line in the form NAME ARGUMENT, where NAME is the tool and ARGUMENT is the transformed item string. Write no other text. \nProtocol table:\nmode | tool | item transformation\namber | dax | uppercase\nblue | wug | unchanged\npriority | suffix\nnormal | -2\nurgent | -9\nApply the transformation to item, append the suffix without spaces, then output tool and argument separated by one space.\nmode=blue, priority=normal, item=silver",
+      "expected": "wug silver-2"
+    },
+    {
+      "id": "routing:mode=blue, priority=normal, item=silver",
+      "branch": "routing",
+      "case": [
+        "blue",
+        false,
+        "silver"
+      ],
+      "content": "If mode=amber, choose dax. If mode=blue, choose wug. Output only the tool name.\nmode=blue, priority=normal, item=silver",
+      "expected": "wug"
+    },
+    {
+      "id": "suffix:mode=blue, priority=normal, item=harbor",
+      "branch": "suffix",
+      "case": [
+        "blue",
+        false,
+        "harbor"
+      ],
+      "content": "If priority=urgent, choose -9. If priority=normal, choose -2. Output only the suffix.\nmode=blue, priority=normal, item=harbor",
+      "expected": "-2"
+    },
+    {
+      "id": "formatting:mode=blue, priority=normal, item=harbor",
+      "branch": "formatting",
+      "case": [
+        "blue",
+        false,
+        "harbor"
+      ],
+      "content": "Join the supplied tool, one space, the supplied value and the supplied suffix. There must be no space between value and suffix. Output only the joined line.\ntool=wug, value=harbor, suffix=-2",
+      "expected": "wug harbor-2"
+    },
+    {
+      "id": "full_original:mode=blue, priority=normal, item=harbor",
+      "branch": "full_original",
+      "case": [
+        "blue",
+        false,
+        "harbor"
+      ],
+      "content": "Route an item using an unfamiliar two-tool protocol. Your reply must be exactly one line in the form NAME ARGUMENT, where NAME is the tool and ARGUMENT is the transformed item string. Write no other text. \nFor amber mode, use tool dax and write the item string in UPPERCASE. For blue mode, use tool wug and keep the item unchanged. For urgent priority, append -9 to the transformed item; for normal priority, append -2.\nmode=blue, priority=normal, item=harbor",
+      "expected": "wug harbor-2"
+    },
+    {
+      "id": "full_table:mode=blue, priority=normal, item=harbor",
+      "branch": "full_table",
+      "case": [
+        "blue",
+        false,
+        "harbor"
+      ],
+      "content": "Route an item using an unfamiliar two-tool protocol. Your reply must be exactly one line in the form NAME ARGUMENT, where NAME is the tool and ARGUMENT is the transformed item string. Write no other text. \nProtocol table:\nmode | tool | item transformation\namber | dax | uppercase\nblue | wug | unchanged\npriority | suffix\nnormal | -2\nurgent | -9\nApply the transformation to item, append the suffix without spaces, then output tool and argument separated by one space.\nmode=blue, priority=normal, item=harbor",
+      "expected": "wug harbor-2"
+    },
+    {
+      "id": "routing:mode=blue, priority=normal, item=harbor",
+      "branch": "routing",
+      "case": [
+        "blue",
+        false,
+        "harbor"
+      ],
+      "content": "If mode=amber, choose dax. If mode=blue, choose wug. Output only the tool name.\nmode=blue, priority=normal, item=harbor",
+      "expected": "wug"
+    },
+    {
+      "id": "transformation:mode=blue, priority=normal, item=harbor",
+      "branch": "transformation",
+      "case": [
+        "blue",
+        false,
+        "harbor"
+      ],
+      "content": "If mode=amber, uppercase the item value. If mode=blue, keep the item value unchanged. Output only the resulting item.\nmode=blue, priority=normal, item=harbor",
+      "expected": "harbor"
+    },
+    {
+      "id": "formatting:mode=blue, priority=normal, item=cobalt",
+      "branch": "formatting",
+      "case": [
+        "blue",
+        false,
+        "cobalt"
+      ],
+      "content": "Join the supplied tool, one space, the supplied value and the supplied suffix. There must be no space between value and suffix. Output only the joined line.\ntool=wug, value=cobalt, suffix=-2",
+      "expected": "wug cobalt-2"
+    },
+    {
+      "id": "full_original:mode=blue, priority=normal, item=cobalt",
+      "branch": "full_original",
+      "case": [
+        "blue",
+        false,
+        "cobalt"
+      ],
+      "content": "Route an item using an unfamiliar two-tool protocol. Your reply must be exactly one line in the form NAME ARGUMENT, where NAME is the tool and ARGUMENT is the transformed item string. Write no other text. \nFor amber mode, use tool dax and write the item string in UPPERCASE. For blue mode, use tool wug and keep the item unchanged. For urgent priority, append -9 to the transformed item; for normal priority, append -2.\nmode=blue, priority=normal, item=cobalt",
+      "expected": "wug cobalt-2"
+    },
+    {
+      "id": "full_table:mode=blue, priority=normal, item=cobalt",
+      "branch": "full_table",
+      "case": [
+        "blue",
+        false,
+        "cobalt"
+      ],
+      "content": "Route an item using an unfamiliar two-tool protocol. Your reply must be exactly one line in the form NAME ARGUMENT, where NAME is the tool and ARGUMENT is the transformed item string. Write no other text. \nProtocol table:\nmode | tool | item transformation\namber | dax | uppercase\nblue | wug | unchanged\npriority | suffix\nnormal | -2\nurgent | -9\nApply the transformation to item, append the suffix without spaces, then output tool and argument separated by one space.\nmode=blue, priority=normal, item=cobalt",
+      "expected": "wug cobalt-2"
+    },
+    {
+      "id": "routing:mode=blue, priority=normal, item=cobalt",
+      "branch": "routing",
+      "case": [
+        "blue",
+        false,
+        "cobalt"
+      ],
+      "content": "If mode=amber, choose dax. If mode=blue, choose wug. Output only the tool name.\nmode=blue, priority=normal, item=cobalt",
+      "expected": "wug"
+    },
+    {
+      "id": "transformation:mode=blue, priority=normal, item=cobalt",
+      "branch": "transformation",
+      "case": [
+        "blue",
+        false,
+        "cobalt"
+      ],
+      "content": "If mode=amber, uppercase the item value. If mode=blue, keep the item value unchanged. Output only the resulting item.\nmode=blue, priority=normal, item=cobalt",
+      "expected": "cobalt"
+    },
+    {
+      "id": "suffix:mode=blue, priority=normal, item=cobalt",
+      "branch": "suffix",
+      "case": [
+        "blue",
+        false,
+        "cobalt"
+      ],
+      "content": "If priority=urgent, choose -9. If priority=normal, choose -2. Output only the suffix.\nmode=blue, priority=normal, item=cobalt",
+      "expected": "-2"
+    },
+    {
+      "id": "full_original:mode=blue, priority=normal, item=meadow",
+      "branch": "full_original",
+      "case": [
+        "blue",
+        false,
+        "meadow"
+      ],
+      "content": "Route an item using an unfamiliar two-tool protocol. Your reply must be exactly one line in the form NAME ARGUMENT, where NAME is the tool and ARGUMENT is the transformed item string. Write no other text. \nFor amber mode, use tool dax and write the item string in UPPERCASE. For blue mode, use tool wug and keep the item unchanged. For urgent priority, append -9 to the transformed item; for normal priority, append -2.\nmode=blue, priority=normal, item=meadow",
+      "expected": "wug meadow-2"
+    },
+    {
+      "id": "full_table:mode=blue, priority=normal, item=meadow",
+      "branch": "full_table",
+      "case": [
+        "blue",
+        false,
+        "meadow"
+      ],
+      "content": "Route an item using an unfamiliar two-tool protocol. Your reply must be exactly one line in the form NAME ARGUMENT, where NAME is the tool and ARGUMENT is the transformed item string. Write no other text. \nProtocol table:\nmode | tool | item transformation\namber | dax | uppercase\nblue | wug | unchanged\npriority | suffix\nnormal | -2\nurgent | -9\nApply the transformation to item, append the suffix without spaces, then output tool and argument separated by one space.\nmode=blue, priority=normal, item=meadow",
+      "expected": "wug meadow-2"
+    },
+    {
+      "id": "routing:mode=blue, priority=normal, item=meadow",
+      "branch": "routing",
+      "case": [
+        "blue",
+        false,
+        "meadow"
+      ],
+      "content": "If mode=amber, choose dax. If mode=blue, choose wug. Output only the tool name.\nmode=blue, priority=normal, item=meadow",
+      "expected": "wug"
+    },
+    {
+      "id": "transformation:mode=blue, priority=normal, item=meadow",
+      "branch": "transformation",
+      "case": [
+        "blue",
+        false,
+        "meadow"
+      ],
+      "content": "If mode=amber, uppercase the item value. If mode=blue, keep the item value unchanged. Output only the resulting item.\nmode=blue, priority=normal, item=meadow",
+      "expected": "meadow"
+    },
+    {
+      "id": "suffix:mode=blue, priority=normal, item=meadow",
+      "branch": "suffix",
+      "case": [
+        "blue",
+        false,
+        "meadow"
+      ],
+      "content": "If priority=urgent, choose -9. If priority=normal, choose -2. Output only the suffix.\nmode=blue, priority=normal, item=meadow",
+      "expected": "-2"
+    },
+    {
+      "id": "formatting:mode=blue, priority=normal, item=meadow",
+      "branch": "formatting",
+      "case": [
+        "blue",
+        false,
+        "meadow"
+      ],
+      "content": "Join the supplied tool, one space, the supplied value and the supplied suffix. There must be no space between value and suffix. Output only the joined line.\ntool=wug, value=meadow, suffix=-2",
+      "expected": "wug meadow-2"
+    },
+    {
+      "id": "full_table:mode=blue, priority=normal, item=ticket",
+      "branch": "full_table",
+      "case": [
+        "blue",
+        false,
+        "ticket"
+      ],
+      "content": "Route an item using an unfamiliar two-tool protocol. Your reply must be exactly one line in the form NAME ARGUMENT, where NAME is the tool and ARGUMENT is the transformed item string. Write no other text. \nProtocol table:\nmode | tool | item transformation\namber | dax | uppercase\nblue | wug | unchanged\npriority | suffix\nnormal | -2\nurgent | -9\nApply the transformation to item, append the suffix without spaces, then output tool and argument separated by one space.\nmode=blue, priority=normal, item=ticket",
+      "expected": "wug ticket-2"
+    },
+    {
+      "id": "routing:mode=blue, priority=normal, item=ticket",
+      "branch": "routing",
+      "case": [
+        "blue",
+        false,
+        "ticket"
+      ],
+      "content": "If mode=amber, choose dax. If mode=blue, choose wug. Output only the tool name.\nmode=blue, priority=normal, item=ticket",
+      "expected": "wug"
+    },
+    {
+      "id": "transformation:mode=blue, priority=normal, item=ticket",
+      "branch": "transformation",
+      "case": [
+        "blue",
+        false,
+        "ticket"
+      ],
+      "content": "If mode=amber, uppercase the item value. If mode=blue, keep the item value unchanged. Output only the resulting item.\nmode=blue, priority=normal, item=ticket",
+      "expected": "ticket"
+    },
+    {
+      "id": "suffix:mode=blue, priority=normal, item=ticket",
+      "branch": "suffix",
+      "case": [
+        "blue",
+        false,
+        "ticket"
+      ],
+      "content": "If priority=urgent, choose -9. If priority=normal, choose -2. Output only the suffix.\nmode=blue, priority=normal, item=ticket",
+      "expected": "-2"
+    },
+    {
+      "id": "formatting:mode=blue, priority=normal, item=ticket",
+      "branch": "formatting",
+      "case": [
+        "blue",
+        false,
+        "ticket"
+      ],
+      "content": "Join the supplied tool, one space, the supplied value and the supplied suffix. There must be no space between value and suffix. Output only the joined line.\ntool=wug, value=ticket, suffix=-2",
+      "expected": "wug ticket-2"
+    },
+    {
+      "id": "full_original:mode=blue, priority=normal, item=ticket",
+      "branch": "full_original",
+      "case": [
+        "blue",
+        false,
+        "ticket"
+      ],
+      "content": "Route an item using an unfamiliar two-tool protocol. Your reply must be exactly one line in the form NAME ARGUMENT, where NAME is the tool and ARGUMENT is the transformed item string. Write no other text. \nFor amber mode, use tool dax and write the item string in UPPERCASE. For blue mode, use tool wug and keep the item unchanged. For urgent priority, append -9 to the transformed item; for normal priority, append -2.\nmode=blue, priority=normal, item=ticket",
+      "expected": "wug ticket-2"
+    },
+    {
+      "id": "routing:mode=blue, priority=urgent, item=planet",
+      "branch": "routing",
+      "case": [
+        "blue",
+        true,
+        "planet"
+      ],
+      "content": "If mode=amber, choose dax. If mode=blue, choose wug. Output only the tool name.\nmode=blue, priority=urgent, item=planet",
+      "expected": "wug"
+    },
+    {
+      "id": "transformation:mode=blue, priority=urgent, item=planet",
+      "branch": "transformation",
+      "case": [
+        "blue",
+        true,
+        "planet"
+      ],
+      "content": "If mode=amber, uppercase the item value. If mode=blue, keep the item value unchanged. Output only the resulting item.\nmode=blue, priority=urgent, item=planet",
+      "expected": "planet"
+    },
+    {
+      "id": "suffix:mode=blue, priority=urgent, item=planet",
+      "branch": "suffix",
+      "case": [
+        "blue",
+        true,
+        "planet"
+      ],
+      "content": "If priority=urgent, choose -9. If priority=normal, choose -2. Output only the suffix.\nmode=blue, priority=urgent, item=planet",
+      "expected": "-9"
+    },
+    {
+      "id": "formatting:mode=blue, priority=urgent, item=planet",
+      "branch": "formatting",
+      "case": [
+        "blue",
+        true,
+        "planet"
+      ],
+      "content": "Join the supplied tool, one space, the supplied value and the supplied suffix. There must be no space between value and suffix. Output only the joined line.\ntool=wug, value=planet, suffix=-9",
+      "expected": "wug planet-9"
+    },
+    {
+      "id": "full_original:mode=blue, priority=urgent, item=planet",
+      "branch": "full_original",
+      "case": [
+        "blue",
+        true,
+        "planet"
+      ],
+      "content": "Route an item using an unfamiliar two-tool protocol. Your reply must be exactly one line in the form NAME ARGUMENT, where NAME is the tool and ARGUMENT is the transformed item string. Write no other text. \nFor amber mode, use tool dax and write the item string in UPPERCASE. For blue mode, use tool wug and keep the item unchanged. For urgent priority, append -9 to the transformed item; for normal priority, append -2.\nmode=blue, priority=urgent, item=planet",
+      "expected": "wug planet-9"
+    },
+    {
+      "id": "full_table:mode=blue, priority=urgent, item=planet",
+      "branch": "full_table",
+      "case": [
+        "blue",
+        true,
+        "planet"
+      ],
+      "content": "Route an item using an unfamiliar two-tool protocol. Your reply must be exactly one line in the form NAME ARGUMENT, where NAME is the tool and ARGUMENT is the transformed item string. Write no other text. \nProtocol table:\nmode | tool | item transformation\namber | dax | uppercase\nblue | wug | unchanged\npriority | suffix\nnormal | -2\nurgent | -9\nApply the transformation to item, append the suffix without spaces, then output tool and argument separated by one space.\nmode=blue, priority=urgent, item=planet",
+      "expected": "wug planet-9"
+    },
+    {
+      "id": "transformation:mode=blue, priority=urgent, item=silver",
+      "branch": "transformation",
+      "case": [
+        "blue",
+        true,
+        "silver"
+      ],
+      "content": "If mode=amber, uppercase the item value. If mode=blue, keep the item value unchanged. Output only the resulting item.\nmode=blue, priority=urgent, item=silver",
+      "expected": "silver"
+    },
+    {
+      "id": "suffix:mode=blue, priority=urgent, item=silver",
+      "branch": "suffix",
+      "case": [
+        "blue",
+        true,
+        "silver"
+      ],
+      "content": "If priority=urgent, choose -9. If priority=normal, choose -2. Output only the suffix.\nmode=blue, priority=urgent, item=silver",
+      "expected": "-9"
+    },
+    {
+      "id": "formatting:mode=blue, priority=urgent, item=silver",
+      "branch": "formatting",
+      "case": [
+        "blue",
+        true,
+        "silver"
+      ],
+      "content": "Join the supplied tool, one space, the supplied value and the supplied suffix. There must be no space between value and suffix. Output only the joined line.\ntool=wug, value=silver, suffix=-9",
+      "expected": "wug silver-9"
+    },
+    {
+      "id": "full_original:mode=blue, priority=urgent, item=silver",
+      "branch": "full_original",
+      "case": [
+        "blue",
+        true,
+        "silver"
+      ],
+      "content": "Route an item using an unfamiliar two-tool protocol. Your reply must be exactly one line in the form NAME ARGUMENT, where NAME is the tool and ARGUMENT is the transformed item string. Write no other text. \nFor amber mode, use tool dax and write the item string in UPPERCASE. For blue mode, use tool wug and keep the item unchanged. For urgent priority, append -9 to the transformed item; for normal priority, append -2.\nmode=blue, priority=urgent, item=silver",
+      "expected": "wug silver-9"
+    },
+    {
+      "id": "full_table:mode=blue, priority=urgent, item=silver",
+      "branch": "full_table",
+      "case": [
+        "blue",
+        true,
+        "silver"
+      ],
+      "content": "Route an item using an unfamiliar two-tool protocol. Your reply must be exactly one line in the form NAME ARGUMENT, where NAME is the tool and ARGUMENT is the transformed item string. Write no other text. \nProtocol table:\nmode | tool | item transformation\namber | dax | uppercase\nblue | wug | unchanged\npriority | suffix\nnormal | -2\nurgent | -9\nApply the transformation to item, append the suffix without spaces, then output tool and argument separated by one space.\nmode=blue, priority=urgent, item=silver",
+      "expected": "wug silver-9"
+    },
+    {
+      "id": "routing:mode=blue, priority=urgent, item=silver",
+      "branch": "routing",
+      "case": [
+        "blue",
+        true,
+        "silver"
+      ],
+      "content": "If mode=amber, choose dax. If mode=blue, choose wug. Output only the tool name.\nmode=blue, priority=urgent, item=silver",
+      "expected": "wug"
+    },
+    {
+      "id": "suffix:mode=blue, priority=urgent, item=harbor",
+      "branch": "suffix",
+      "case": [
+        "blue",
+        true,
+        "harbor"
+      ],
+      "content": "If priority=urgent, choose -9. If priority=normal, choose -2. Output only the suffix.\nmode=blue, priority=urgent, item=harbor",
+      "expected": "-9"
+    },
+    {
+      "id": "formatting:mode=blue, priority=urgent, item=harbor",
+      "branch": "formatting",
+      "case": [
+        "blue",
+        true,
+        "harbor"
+      ],
+      "content": "Join the supplied tool, one space, the supplied value and the supplied suffix. There must be no space between value and suffix. Output only the joined line.\ntool=wug, value=harbor, suffix=-9",
+      "expected": "wug harbor-9"
+    },
+    {
+      "id": "full_original:mode=blue, priority=urgent, item=harbor",
+      "branch": "full_original",
+      "case": [
+        "blue",
+        true,
+        "harbor"
+      ],
+      "content": "Route an item using an unfamiliar two-tool protocol. Your reply must be exactly one line in the form NAME ARGUMENT, where NAME is the tool and ARGUMENT is the transformed item string. Write no other text. \nFor amber mode, use tool dax and write the item string in UPPERCASE. For blue mode, use tool wug and keep the item unchanged. For urgent priority, append -9 to the transformed item; for normal priority, append -2.\nmode=blue, priority=urgent, item=harbor",
+      "expected": "wug harbor-9"
+    },
+    {
+      "id": "full_table:mode=blue, priority=urgent, item=harbor",
+      "branch": "full_table",
+      "case": [
+        "blue",
+        true,
+        "harbor"
+      ],
+      "content": "Route an item using an unfamiliar two-tool protocol. Your reply must be exactly one line in the form NAME ARGUMENT, where NAME is the tool and ARGUMENT is the transformed item string. Write no other text. \nProtocol table:\nmode | tool | item transformation\namber | dax | uppercase\nblue | wug | unchanged\npriority | suffix\nnormal | -2\nurgent | -9\nApply the transformation to item, append the suffix without spaces, then output tool and argument separated by one space.\nmode=blue, priority=urgent, item=harbor",
+      "expected": "wug harbor-9"
+    },
+    {
+      "id": "routing:mode=blue, priority=urgent, item=harbor",
+      "branch": "routing",
+      "case": [
+        "blue",
+        true,
+        "harbor"
+      ],
+      "content": "If mode=amber, choose dax. If mode=blue, choose wug. Output only the tool name.\nmode=blue, priority=urgent, item=harbor",
+      "expected": "wug"
+    },
+    {
+      "id": "transformation:mode=blue, priority=urgent, item=harbor",
+      "branch": "transformation",
+      "case": [
+        "blue",
+        true,
+        "harbor"
+      ],
+      "content": "If mode=amber, uppercase the item value. If mode=blue, keep the item value unchanged. Output only the resulting item.\nmode=blue, priority=urgent, item=harbor",
+      "expected": "harbor"
+    },
+    {
+      "id": "formatting:mode=blue, priority=urgent, item=cobalt",
+      "branch": "formatting",
+      "case": [
+        "blue",
+        true,
+        "cobalt"
+      ],
+      "content": "Join the supplied tool, one space, the supplied value and the supplied suffix. There must be no space between value and suffix. Output only the joined line.\ntool=wug, value=cobalt, suffix=-9",
+      "expected": "wug cobalt-9"
+    },
+    {
+      "id": "full_original:mode=blue, priority=urgent, item=cobalt",
+      "branch": "full_original",
+      "case": [
+        "blue",
+        true,
+        "cobalt"
+      ],
+      "content": "Route an item using an unfamiliar two-tool protocol. Your reply must be exactly one line in the form NAME ARGUMENT, where NAME is the tool and ARGUMENT is the transformed item string. Write no other text. \nFor amber mode, use tool dax and write the item string in UPPERCASE. For blue mode, use tool wug and keep the item unchanged. For urgent priority, append -9 to the transformed item; for normal priority, append -2.\nmode=blue, priority=urgent, item=cobalt",
+      "expected": "wug cobalt-9"
+    },
+    {
+      "id": "full_table:mode=blue, priority=urgent, item=cobalt",
+      "branch": "full_table",
+      "case": [
+        "blue",
+        true,
+        "cobalt"
+      ],
+      "content": "Route an item using an unfamiliar two-tool protocol. Your reply must be exactly one line in the form NAME ARGUMENT, where NAME is the tool and ARGUMENT is the transformed item string. Write no other text. \nProtocol table:\nmode | tool | item transformation\namber | dax | uppercase\nblue | wug | unchanged\npriority | suffix\nnormal | -2\nurgent | -9\nApply the transformation to item, append the suffix without spaces, then output tool and argument separated by one space.\nmode=blue, priority=urgent, item=cobalt",
+      "expected": "wug cobalt-9"
+    },
+    {
+      "id": "routing:mode=blue, priority=urgent, item=cobalt",
+      "branch": "routing",
+      "case": [
+        "blue",
+        true,
+        "cobalt"
+      ],
+      "content": "If mode=amber, choose dax. If mode=blue, choose wug. Output only the tool name.\nmode=blue, priority=urgent, item=cobalt",
+      "expected": "wug"
+    },
+    {
+      "id": "transformation:mode=blue, priority=urgent, item=cobalt",
+      "branch": "transformation",
+      "case": [
+        "blue",
+        true,
+        "cobalt"
+      ],
+      "content": "If mode=amber, uppercase the item value. If mode=blue, keep the item value unchanged. Output only the resulting item.\nmode=blue, priority=urgent, item=cobalt",
+      "expected": "cobalt"
+    },
+    {
+      "id": "suffix:mode=blue, priority=urgent, item=cobalt",
+      "branch": "suffix",
+      "case": [
+        "blue",
+        true,
+        "cobalt"
+      ],
+      "content": "If priority=urgent, choose -9. If priority=normal, choose -2. Output only the suffix.\nmode=blue, priority=urgent, item=cobalt",
+      "expected": "-9"
+    },
+    {
+      "id": "full_original:mode=blue, priority=urgent, item=meadow",
+      "branch": "full_original",
+      "case": [
+        "blue",
+        true,
+        "meadow"
+      ],
+      "content": "Route an item using an unfamiliar two-tool protocol. Your reply must be exactly one line in the form NAME ARGUMENT, where NAME is the tool and ARGUMENT is the transformed item string. Write no other text. \nFor amber mode, use tool dax and write the item string in UPPERCASE. For blue mode, use tool wug and keep the item unchanged. For urgent priority, append -9 to the transformed item; for normal priority, append -2.\nmode=blue, priority=urgent, item=meadow",
+      "expected": "wug meadow-9"
+    },
+    {
+      "id": "full_table:mode=blue, priority=urgent, item=meadow",
+      "branch": "full_table",
+      "case": [
+        "blue",
+        true,
+        "meadow"
+      ],
+      "content": "Route an item using an unfamiliar two-tool protocol. Your reply must be exactly one line in the form NAME ARGUMENT, where NAME is the tool and ARGUMENT is the transformed item string. Write no other text. \nProtocol table:\nmode | tool | item transformation\namber | dax | uppercase\nblue | wug | unchanged\npriority | suffix\nnormal | -2\nurgent | -9\nApply the transformation to item, append the suffix without spaces, then output tool and argument separated by one space.\nmode=blue, priority=urgent, item=meadow",
+      "expected": "wug meadow-9"
+    },
+    {
+      "id": "routing:mode=blue, priority=urgent, item=meadow",
+      "branch": "routing",
+      "case": [
+        "blue",
+        true,
+        "meadow"
+      ],
+      "content": "If mode=amber, choose dax. If mode=blue, choose wug. Output only the tool name.\nmode=blue, priority=urgent, item=meadow",
+      "expected": "wug"
+    },
+    {
+      "id": "transformation:mode=blue, priority=urgent, item=meadow",
+      "branch": "transformation",
+      "case": [
+        "blue",
+        true,
+        "meadow"
+      ],
+      "content": "If mode=amber, uppercase the item value. If mode=blue, keep the item value unchanged. Output only the resulting item.\nmode=blue, priority=urgent, item=meadow",
+      "expected": "meadow"
+    },
+    {
+      "id": "suffix:mode=blue, priority=urgent, item=meadow",
+      "branch": "suffix",
+      "case": [
+        "blue",
+        true,
+        "meadow"
+      ],
+      "content": "If priority=urgent, choose -9. If priority=normal, choose -2. Output only the suffix.\nmode=blue, priority=urgent, item=meadow",
+      "expected": "-9"
+    },
+    {
+      "id": "formatting:mode=blue, priority=urgent, item=meadow",
+      "branch": "formatting",
+      "case": [
+        "blue",
+        true,
+        "meadow"
+      ],
+      "content": "Join the supplied tool, one space, the supplied value and the supplied suffix. There must be no space between value and suffix. Output only the joined line.\ntool=wug, value=meadow, suffix=-9",
+      "expected": "wug meadow-9"
+    },
+    {
+      "id": "full_table:mode=blue, priority=urgent, item=ticket",
+      "branch": "full_table",
+      "case": [
+        "blue",
+        true,
+        "ticket"
+      ],
+      "content": "Route an item using an unfamiliar two-tool protocol. Your reply must be exactly one line in the form NAME ARGUMENT, where NAME is the tool and ARGUMENT is the transformed item string. Write no other text. \nProtocol table:\nmode | tool | item transformation\namber | dax | uppercase\nblue | wug | unchanged\npriority | suffix\nnormal | -2\nurgent | -9\nApply the transformation to item, append the suffix without spaces, then output tool and argument separated by one space.\nmode=blue, priority=urgent, item=ticket",
+      "expected": "wug ticket-9"
+    },
+    {
+      "id": "routing:mode=blue, priority=urgent, item=ticket",
+      "branch": "routing",
+      "case": [
+        "blue",
+        true,
+        "ticket"
+      ],
+      "content": "If mode=amber, choose dax. If mode=blue, choose wug. Output only the tool name.\nmode=blue, priority=urgent, item=ticket",
+      "expected": "wug"
+    },
+    {
+      "id": "transformation:mode=blue, priority=urgent, item=ticket",
+      "branch": "transformation",
+      "case": [
+        "blue",
+        true,
+        "ticket"
+      ],
+      "content": "If mode=amber, uppercase the item value. If mode=blue, keep the item value unchanged. Output only the resulting item.\nmode=blue, priority=urgent, item=ticket",
+      "expected": "ticket"
+    },
+    {
+      "id": "suffix:mode=blue, priority=urgent, item=ticket",
+      "branch": "suffix",
+      "case": [
+        "blue",
+        true,
+        "ticket"
+      ],
+      "content": "If priority=urgent, choose -9. If priority=normal, choose -2. Output only the suffix.\nmode=blue, priority=urgent, item=ticket",
+      "expected": "-9"
+    },
+    {
+      "id": "formatting:mode=blue, priority=urgent, item=ticket",
+      "branch": "formatting",
+      "case": [
+        "blue",
+        true,
+        "ticket"
+      ],
+      "content": "Join the supplied tool, one space, the supplied value and the supplied suffix. There must be no space between value and suffix. Output only the joined line.\ntool=wug, value=ticket, suffix=-9",
+      "expected": "wug ticket-9"
+    },
+    {
+      "id": "full_original:mode=blue, priority=urgent, item=ticket",
+      "branch": "full_original",
+      "case": [
+        "blue",
+        true,
+        "ticket"
+      ],
+      "content": "Route an item using an unfamiliar two-tool protocol. Your reply must be exactly one line in the form NAME ARGUMENT, where NAME is the tool and ARGUMENT is the transformed item string. Write no other text. \nFor amber mode, use tool dax and write the item string in UPPERCASE. For blue mode, use tool wug and keep the item unchanged. For urgent priority, append -9 to the transformed item; for normal priority, append -2.\nmode=blue, priority=urgent, item=ticket",
+      "expected": "wug ticket-9"
+    }
+  ],
+  "caveat": "All words previously used in development. Formatting receives oracle intermediates; component calls are not an end-to-end agent.",
+  "comparison": "Original rule and one fixed table interface; no within-run prompt changes or retries.",
+  "max_tokens": 96,
+  "budget_seconds": 600,
+  "peak_memory_limit_bytes": 20000000000
+}

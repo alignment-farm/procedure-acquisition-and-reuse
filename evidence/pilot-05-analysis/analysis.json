@@ -1,0 +1,109 @@
+{
+  "routing": {
+    "total": 24,
+    "correct": 24,
+    "prompt_tokens": 1044,
+    "completion_tokens": 72,
+    "field_correct": null,
+    "failures": []
+  },
+  "transformation": {
+    "total": 24,
+    "correct": 24,
+    "prompt_tokens": 1116,
+    "completion_tokens": 74,
+    "field_correct": null,
+    "failures": []
+  },
+  "suffix": {
+    "total": 24,
+    "correct": 24,
+    "prompt_tokens": 1020,
+    "completion_tokens": 72,
+    "field_correct": null,
+    "failures": []
+  },
+  "formatting": {
+    "total": 24,
+    "correct": 24,
+    "prompt_tokens": 1246,
+    "completion_tokens": 164,
+    "field_correct": null,
+    "failures": []
+  },
+  "full_original": {
+    "total": 24,
+    "correct": 21,
+    "prompt_tokens": 2796,
+    "completion_tokens": 165,
+    "field_correct": {
+      "parseable": 24,
+      "tool": 24,
+      "item": 21,
+      "suffix": 24,
+      "strict_format": 24
+    },
+    "failures": [
+      {
+        "case": [
+          "amber",
+          false,
+          "planet"
+        ],
+        "actual": "dax PLANTET-2",
+        "expected": "dax PLANET-2"
+      },
+      {
+        "case": [
+          "amber",
+          false,
+          "harbor"
+        ],
+        "actual": "dax HARBOUR-2",
+        "expected": "dax HARBOR-2"
+      },
+      {
+        "case": [
+          "amber",
+          true,
+          "planet"
+        ],
+        "actual": "dax AMBER-9",
+        "expected": "dax PLANET-9"
+      }
+    ]
+  },
+  "full_table": {
+    "total": 24,
+    "correct": 22,
+    "prompt_tokens": 2964,
+    "completion_tokens": 163,
+    "field_correct": {
+      "parseable": 22,
+      "tool": 22,
+      "item": 22,
+      "suffix": 22,
+      "strict_format": 22
+    },
+    "failures": [
+      {
+        "case": [
+          "amber",
+          false,
+          "planet"
+        ],
+        "actual": "dax PLANTEN",
+        "expected": "dax PLANET-2"
+      },
+      {
+        "case": [
+          "amber",
+          true,
+          "planet"
+        ],
+        "actual": "dax PLANTEN9",
+        "expected": "dax PLANET-9"
+      }
+    ]
+  }
+}
