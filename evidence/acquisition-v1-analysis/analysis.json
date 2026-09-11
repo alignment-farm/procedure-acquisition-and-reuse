@@ -1,0 +1,335 @@
+{
+  "branches": {
+    "none": {
+      "first_correct": 0,
+      "total": 64,
+      "withheld_correct": 0,
+      "withheld_total": 16,
+      "seen_correct": 0,
+      "seen_total": 48,
+      "length_correct": {
+        "4": 0,
+        "6": 0,
+        "8": 0,
+        "10": 0
+      },
+      "second_correct": 0,
+      "repeat_identical": 64,
+      "field_correct": {
+        "parseable": 0,
+        "tool": 0,
+        "item": 0,
+        "suffix": 0,
+        "strict_format": 0
+      },
+      "uses": 128,
+      "prompt_tokens": 8392,
+      "completion_tokens": 814,
+      "inference_seconds": 40.37372241189587,
+      "switch_seconds": 0.03748029313283041,
+      "verification_seconds": 0.0002958350523840636,
+      "incremental_acquisition_seconds": 0.0,
+      "cumulative_seconds": [
+        {
+          "uses": 1,
+          "seconds": 0.2927146660222206,
+          "successes": 0
+        },
+        {
+          "uses": 16,
+          "seconds": 4.168118917034008,
+          "successes": 0
+        },
+        {
+          "uses": 32,
+          "seconds": 8.640749832964502,
+          "successes": 0
+        },
+        {
+          "uses": 64,
+          "seconds": 19.84765357899596,
+          "successes": 0
+        },
+        {
+          "uses": 128,
+          "seconds": 40.37401824694825,
+          "successes": 0
+        }
+      ]
+    },
+    "examples": {
+      "first_correct": 41,
+      "total": 64,
+      "withheld_correct": 2,
+      "withheld_total": 16,
+      "seen_correct": 39,
+      "seen_total": 48,
+      "length_correct": {
+        "4": 13,
+        "6": 10,
+        "8": 10,
+        "10": 8
+      },
+      "second_correct": 41,
+      "repeat_identical": 64,
+      "field_correct": {
+        "parseable": 64,
+        "tool": 64,
+        "item": 42,
+        "suffix": 56,
+        "strict_format": 64
+      },
+      "uses": 128,
+      "prompt_tokens": 37192,
+      "completion_tokens": 1176,
+      "inference_seconds": 69.03015587708796,
+      "switch_seconds": 0.009089381142985076,
+      "verification_seconds": 0.0003030023362953216,
+      "incremental_acquisition_seconds": 0.0,
+      "cumulative_seconds": [
+        {
+          "uses": 1,
+          "seconds": 0.5082005410222337,
+          "successes": 1
+        },
+        {
+          "uses": 16,
+          "seconds": 7.826904250017833,
+          "successes": 13
+        },
+        {
+          "uses": 32,
+          "seconds": 16.006544415053213,
+          "successes": 23
+        },
+        {
+          "uses": 64,
+          "seconds": 34.02409450526466,
+          "successes": 41
+        },
+        {
+          "uses": 128,
+          "seconds": 69.03045887942426,
+          "successes": 82
+        }
+      ]
+    },
+    "lesson": {
+      "first_correct": 0,
+      "total": 64,
+      "withheld_correct": 0,
+      "withheld_total": 16,
+      "seen_correct": 0,
+      "seen_total": 48,
+      "length_correct": {
+        "4": 0,
+        "6": 0,
+        "8": 0,
+        "10": 0
+      },
+      "second_correct": 0,
+      "repeat_identical": 64,
+      "field_correct": {
+        "parseable": 0,
+        "tool": 0,
+        "item": 0,
+        "suffix": 0,
+        "strict_format": 0
+      },
+      "uses": 128,
+      "prompt_tokens": 16712,
+      "completion_tokens": 968,
+      "inference_seconds": 50.155724247015314,
+      "switch_seconds": 1.4459947124123573e-05,
+      "verification_seconds": 0.0002928340982180089,
+      "incremental_acquisition_seconds": 2.0301267500035465,
+      "cumulative_seconds": [
+        {
+          "uses": 1,
+          "seconds": 2.3489583330228925,
+          "successes": 0
+        },
+        {
+          "uses": 16,
+          "seconds": 7.20541779010091,
+          "successes": 0
+        },
+        {
+          "uses": 32,
+          "seconds": 13.174061000085203,
+          "successes": 0
+        },
+        {
+          "uses": 64,
+          "seconds": 26.771851498167962,
+          "successes": 0
+        },
+        {
+          "uses": 128,
+          "seconds": 52.18614383111708,
+          "successes": 0
+        }
+      ]
+    },
+    "oracle": {
+      "first_correct": 64,
+      "total": 64,
+      "withheld_correct": 16,
+      "withheld_total": 16,
+      "seen_correct": 48,
+      "seen_total": 48,
+      "length_correct": {
+        "4": 16,
+        "6": 16,
+        "8": 16,
+        "10": 16
+      },
+      "second_correct": 64,
+      "repeat_identical": 64,
+      "field_correct": {
+        "parseable": 64,
+        "tool": 64,
+        "item": 64,
+        "suffix": 64,
+        "strict_format": 64
+      },
+      "uses": 128,
+      "prompt_tokens": 15176,
+      "completion_tokens": 1204,
+      "inference_seconds": 53.4096814210352,
+      "switch_seconds": 1.2705073459073901e-05,
+      "verification_seconds": 0.00029108597664162517,
+      "incremental_acquisition_seconds": 0.0,
+      "cumulative_seconds": [
+        {
+          "uses": 1,
+          "seconds": 0.3837491660087835,
+          "successes": 1
+        },
+        {
+          "uses": 16,
+          "seconds": 6.010027416865341,
+          "successes": 16
+        },
+        {
+          "uses": 32,
+          "seconds": 12.330489123996813,
+          "successes": 32
+        },
+        {
+          "uses": 64,
+          "seconds": 26.413121168938233,
+          "successes": 64
+        },
+        {
+          "uses": 128,
+          "seconds": 53.409972507011844,
+          "successes": 128
+        }
+      ]
+    },
+    "adapter": {
+      "first_correct": 26,
+      "total": 64,
+      "withheld_correct": 4,
+      "withheld_total": 16,
+      "seen_correct": 22,
+      "seen_total": 48,
+      "length_correct": {
+        "4": 5,
+        "6": 6,
+        "8": 8,
+        "10": 7
+      },
+      "second_correct": 26,
+      "repeat_identical": 64,
+      "field_correct": {
+        "parseable": 52,
+        "tool": 52,
+        "item": 26,
+        "suffix": 48,
+        "strict_format": 52
+      },
+      "uses": 128,
+      "prompt_tokens": 8392,
+      "completion_tokens": 1128,
+      "inference_seconds": 47.75668712507468,
+      "switch_seconds": 0.0469854990078602,
+      "verification_seconds": 0.00029155187075957656,
+      "incremental_acquisition_seconds": 13.164019624964567,
+      "cumulative_seconds": [
+        {
+          "uses": 1,
+          "seconds": 13.490796583006158,
+          "successes": 0
+        },
+        {
+          "uses": 16,
+          "seconds": 18.301988293009344,
+          "successes": 5
+        },
+        {
+          "uses": 32,
+          "seconds": 23.669872170023154,
+          "successes": 11
+        },
+        {
+          "uses": 64,
+          "seconds": 36.680822881899076,
+          "successes": 26
+        },
+        {
+          "uses": 128,
+          "seconds": 60.920998301910004,
+          "successes": 52
+        }
+      ]
+    }
+  },
+  "training": {
+    "kind": "training_complete",
+    "elapsed": 24.949270417011576,
+    "seconds": 13.16198316597729,
+    "input_tokens": 6568,
+    "supervised_tokens": 616,
+    "steps": 96,
+    "hash": "b4377e06c58cb4efd0e1fa268537cafc308768229a9121d18b68ef0a486a01e1",
+    "adapter_bytes": 2624893
+  },
+  "lesson_cost": {
+    "seconds": 2.0301267500035465,
+    "prompt_tokens": 274,
+    "completion_tokens": 66
+  },
+  "training_recall": 12,
+  "training_recall_total": 12,
+  "final_invariants": {
+    "kind": "final_invariants",
+    "elapsed": 302.86108062500716,
+    "base_unchanged": true,
+    "reset_logits_exact": true
+  },
+  "total": {
+    "kind": "complete",
+    "elapsed": 302.86157783301314,
+    "status": "complete",
+    "error": null,
+    "seconds": 302.8615760829998,
+    "peak_mlx_bytes": 9635773998
+  },
+  "projection": {
+    "examples": {
+      "eligible": false,
+      "seconds_saved_per_call": 0.1661989746251038,
+      "linear_crossing_calls": 79.20638291938165,
+      "caveat": "Arithmetic projection only; not observed repayment. Ineligible when adapter has lower useful performance; excludes researcher labor, switching, energy and deployment startup."
+    },
+    "lesson": {
+      "eligible": true,
+      "seconds_saved_per_call": 0.018742477515161227,
+      "linear_crossing_calls": 594.0459507530184,
+      "caveat": "Arithmetic projection only; not observed repayment. Ineligible when adapter has lower useful performance; excludes researcher labor, switching, energy and deployment startup."
+    }
+  },
+  "caveat": "Single seed and 16 identifier clusters; two repetitions are not independent samples. No automatic retries, persistent KV cache or dollar/energy conversion."
+}

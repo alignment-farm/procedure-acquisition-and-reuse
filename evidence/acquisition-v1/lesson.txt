@@ -1,0 +1,1 @@
+Lesson: For any item, append "-2" if mode=amber; append "-9" if mode=blue. Priority (normal/urgent) determines suffix: normal → -2, urgent → -9. Assumption: Unseen combinations (e.g., non-natural items) follow the same rule unless specified.

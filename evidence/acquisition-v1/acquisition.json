@@ -1,0 +1,98 @@
+[
+  {
+    "case": [
+      "amber",
+      false,
+      "cat"
+    ],
+    "call": "dax CAT-2"
+  },
+  {
+    "case": [
+      "amber",
+      false,
+      "fern"
+    ],
+    "call": "dax FERN-2"
+  },
+  {
+    "case": [
+      "amber",
+      false,
+      "oak"
+    ],
+    "call": "dax OAK-2"
+  },
+  {
+    "case": [
+      "amber",
+      false,
+      "reed"
+    ],
+    "call": "dax REED-2"
+  },
+  {
+    "case": [
+      "blue",
+      false,
+      "cat"
+    ],
+    "call": "wug cat-2"
+  },
+  {
+    "case": [
+      "blue",
+      false,
+      "fern"
+    ],
+    "call": "wug fern-2"
+  },
+  {
+    "case": [
+      "blue",
+      false,
+      "oak"
+    ],
+    "call": "wug oak-2"
+  },
+  {
+    "case": [
+      "blue",
+      false,
+      "reed"
+    ],
+    "call": "wug reed-2"
+  },
+  {
+    "case": [
+      "blue",
+      true,
+      "cat"
+    ],
+    "call": "wug cat-9"
+  },
+  {
+    "case": [
+      "blue",
+      true,
+      "fern"
+    ],
+    "call": "wug fern-9"
+  },
+  {
+    "case": [
+      "blue",
+      true,
+      "oak"
+    ],
+    "call": "wug oak-9"
+  },
+  {
+    "case": [
+      "blue",
+      true,
+      "reed"
+    ],
+    "call": "wug reed-9"
+  }
+]

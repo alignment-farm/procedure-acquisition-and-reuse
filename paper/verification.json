@@ -1,0 +1,7 @@
+{
+  "compiler": "Tectonic 0.17.0",
+  "pages": 4,
+  "pdf_sha256": "c5beec9160aa00f5fbfcd3f334f71419010c049c83f076faf82cafa66e05350b",
+  "visual_review": "All four final PNG pages inspected; no clipping, overlap or unresolved citations. Final build produced no warnings.",
+  "evidence_validation": "Run manifest, 640 unique paired calls, oracle scoring, 12 training mask spans, base/reset invariants verified."
+}

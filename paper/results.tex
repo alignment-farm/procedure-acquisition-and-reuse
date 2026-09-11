@@ -1,0 +1,69 @@
+\begin{table}[H]
+
+\centering
+
+\begin{tabular}{lrrr}
+
+\toprule
+
+Representation & All /64 & Seen /48 & Withheld /16 \\
+
+\midrule
+
+No acquisition & 0 & 0 & 0 \\
+
+Examples & 41 & 39 & 2 \\
+
+Generated lesson & 0 & 0 & 0 \\
+
+Supplied rule & 64 & 48 & 16 \\
+
+Adapter & 26 & 22 & 4 \\
+
+\bottomrule
+
+\end{tabular}
+
+\caption{First-pass exact-call success on 64 new-input tasks.}
+
+\end{table}
+
+The adapter recalls 12/12 training calls but succeeds on only 26/64 new-input calls. Examples achieve 41/64; the supplied rule achieves 64/64. The generated lesson and no-acquisition reference each achieve 0/64. This distinguishes fitting the acquisition examples from reliable transfer.
+
+Second-pass exact outputs match the first pass on No acquisition 64/64, Examples 64/64, Generated lesson 64/64, Supplied rule 64/64, Adapter 64/64. These repetitions add cost measurements, not independent accuracy evidence.
+
+\begin{table}[H]
+
+\centering
+
+\begin{tabular}{lrrr}
+
+\toprule
+
+Representation & Input tokens & Output tokens & Use seconds \\
+
+\midrule
+
+No acquisition & 8,392 & 814 & 40.37 \\
+
+Examples & 37,192 & 1,176 & 69.03 \\
+
+Generated lesson & 16,712 & 968 & 50.16 \\
+
+Supplied rule & 15,176 & 1,204 & 53.41 \\
+
+Adapter & 8,392 & 1,128 & 47.76 \\
+
+\bottomrule
+
+\end{tabular}
+
+\caption{Measured generation costs for 128 uses per branch; excludes acquisition and switching.}
+
+\end{table}
+
+The fixed update took 13.16 seconds including its final hash and adapter save, processing 6,568 input positions and supervising 616 answer/EOS tokens. The adapter occupies 2,624,893 bytes. Lesson generation took 2.03 seconds (274 input and 66 output tokens). Peak MLX allocation over the run was 9.64 GB; total wall time including provenance and checks was 302.86 seconds.
+
+The adapter has lower useful performance than examples, so a faster or shorter adapter call would not establish a storage advantage at comparable quality. No repayment relative to examples is established in this workload. A comparison against the failed generated lesson cannot rescue a broad parametric-storage claim. The machine-readable analysis includes cumulative measured use costs and explicitly labeled linear arithmetic projections; projections with lower adapter accuracy are ineligible as quality-matched break-even claims.
+
+Base-parameter hashes remained unchanged and restored probe logits matched exactly after adapter resets. The final checkpoint was fixed before evaluation; no fitting followed the observed failures.

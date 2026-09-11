@@ -1,0 +1,27 @@
+{
+  "none": {
+    "correct": 0,
+    "total": 64,
+    "repeat_correct": 0
+  },
+  "examples": {
+    "correct": 41,
+    "total": 64,
+    "repeat_correct": 41
+  },
+  "lesson": {
+    "correct": 0,
+    "total": 64,
+    "repeat_correct": 0
+  },
+  "oracle": {
+    "correct": 64,
+    "total": 64,
+    "repeat_correct": 64
+  },
+  "adapter": {
+    "correct": 26,
+    "total": 64,
+    "repeat_correct": 26
+  }
+}

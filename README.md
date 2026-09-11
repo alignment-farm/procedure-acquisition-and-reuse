@@ -128,6 +128,8 @@ intervention. No paid API or remote-compute campaign is commissioned by this bri
 
 ## Findings and publication
 
+**Initial campaign complete (11 September 2026).** The [local report](output/pdf/procedure-acquisition.pdf) and [results/reproduction note](notes/2026-09-11-acquisition-results.md) document the frozen comparison. The adapter recalled 12/12 training calls but passed 26/64 new-input tasks, versus 41/64 for examples and 64/64 for a supplied rule. A defective generated lesson passed 0/64. No quality-matched cost repayment was established. All evidence, the final adapter, code and LaTeX source are preserved; the bounded campaign stops without a hyperparameter sweep.
+
 Add links here as research notes, evidence, and a manuscript become available.
 Keep methods, code, configurations, saved outputs, failures, and reproduction
 instructions in this project. The intended publication format is LaTeX source,
