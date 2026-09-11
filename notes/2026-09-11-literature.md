@@ -1,0 +1,12 @@
+# Closest-work review for the bounded comparison
+
+Primary HTML methods sections inspected on 11 September 2026 (not a complete systematic review). Versioned sources:
+
+- SEAL, arXiv:2506.10943v2, sections 3–4 and implementation discussion: learned self-edit generation and downstream post-update evaluation. Our fixed supervised adapter omits the learned writer and outer RL loop; this is not a SEAL replication. https://arxiv.org/html/2506.10943v2
+- Procedural Memory Distillation, 2607.01480v1, sections 3.1–3.2: hierarchical cross-episode memory conditions a self-teacher; online policy/memory co-evolution. Memory-free inference is prior art. Our static checked demonstrations and off-policy answer loss omit its central mechanisms. https://arxiv.org/html/2607.01480v1
+- PERK, 2507.06415v3, sections 3.1–3.2: LoRA scratchpad and meta-learned initialization via inner context likelihood and outer reasoning objective. Our randomly initialized adapter is not evidence about PERK's effectiveness. https://arxiv.org/html/2507.06415v3
+- ACE, 2510.04618v3, section 3: explicit playbooks with generator/reflector/curator and incremental updates. Our single generated lesson is a minimal explicit-memory baseline, not ACE. Official repository linked in the paper: https://github.com/ace-agent/ace. https://arxiv.org/html/2510.04618v3
+- Beyond Perplexity, 2607.00368v1, sections 1–2: prediction likelihood cannot establish deployment-memory behavior. We measure generated new-input calls, training recall separately, and maintain matched explicit-memory controls. https://arxiv.org/html/2607.00368v1
+- Amortizing intractable inference in large language models, 2310.04363v2, introduction/method framing: learning a sampler can move work from inference into training, including tool-use reasoning. Our deterministic router and empirical cost ledger do not reproduce its GFlowNet objective. https://arxiv.org/html/2310.04363v2
+
+Available implementation actually reused: MLX-LM commit 86b48c461feebf87c58788655b7e57b5574b9e6d, local tuner/utils.py inspected for exact last-layer selection and scale convention, plus sibling mlx_smoke.py for manual loss/update/reset pattern. Frozen base with query/value LoRA is supported. No external paper's implementation is executed or represented as replicated. PMD/PERK methods are much larger interventions than warranted for this initial study. This comparison addresses a narrow local feasibility/cost question; it does not establish a novel mechanism.
