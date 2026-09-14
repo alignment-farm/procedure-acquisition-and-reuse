@@ -33,7 +33,11 @@ map supplies background, not a mandatory experimental protocol.
 
 ### Model resources
 
-- Open weight models with `docker model` (preferred)
+- Dedicated Mac Studio M1 (64 GB unified memory), commissioned for model serving
+  over Tailscale backed by docker model runner (preferred).
+  `curl https://mac-studio-7hr7.taile71f88.ts.net/engines/v1/chat/completions ...`
+  Verify gradient or mutable-state access separately before using a serving resource for a neural treatment.
+- Local open-weight models with `docker model`
 - OpenAI models with `codex`
 - SpaceXAI models with `agent`
 

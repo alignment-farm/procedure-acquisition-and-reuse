@@ -7,8 +7,8 @@ new inputs. Compare retained examples, a compact explicit lesson, and a
 parameter update such as an adapter.
 
 This is an independent investigation arising from Construct-2's
-[S2 acquisition and revision question](../../construct-2/sources/THEORIES_AND_QUESTIONS.md#s2-can-a-learned-procedure-survive-later-learning-and-accept-a-scoped-correction)
-and [S5 retention and consolidation question](../../construct-2/sources/THEORIES_AND_QUESTIONS.md#s5-when-should-a-useful-temporary-update-be-retained-or-consolidated).
+[S2 acquisition and revision question](../../construct-2/studies/README.md#s2-can-a-learned-procedure-survive-later-learning-and-accept-a-scoped-correction)
+and [S5 retention and consolidation question](../../construct-2/studies/README.md#s5-when-should-a-useful-temporary-update-be-retained-or-consolidated).
 
 ## Question
 
@@ -53,7 +53,7 @@ not establish procedural acquisition or retention without the original evidence.
 Inspect its implementation for reusable components and preserve provenance;
 its two-step update recipe and synthetic task are not prescribed here.
 
-The parent's [evidence and paper map](../../construct-2/sources/THEORIES_AND_QUESTIONS.md)
+The parent's [evidence and paper map](../../construct-2/studies/README.md)
 provides versioned reading leads. Start with its assessments of:
 
 - **SEAL (P4):** adaptation-data generation and evaluation after removing the
@@ -67,9 +67,9 @@ These are starting leads from the parent's review, not a completed literature
 review for this question. Check the closest procedural-learning, distillation,
 and amortized-computation work before claiming novelty. A replication or a
 careful explanation may be a useful first contribution. The parent's
-[research perspective](../../construct-2/notes/PERSPECTIVES.md) motivates comparing
+[research perspective](../../construct-2/notes/RESEARCH_PERSPECTIVES.md) motivates comparing
 representations by how knowledge is used and revised; its
-[Construct synthesis](../../construct-2/notes/RESEARCH_BRIEF.md) supplies bounded
+[Construct synthesis](../../construct-2/notes/PREVIOUS_RESEARCH.md) supplies bounded
 evidence for useful explicit memory.
 
 ## Possible first comparison
@@ -114,16 +114,17 @@ supports. These comparisons are design suggestions, not a frozen protocol.
 
 ## Resources
 
-- Open-weight models through `docker model` are preferred.
-- OpenAI models through `codex` and SpaceXAI models through `agent` are available
-  resource routes; their useful roles depend on the interfaces provided.
+- Current model routes are listed in [AGENTS.md](AGENTS.md#model-resources),
+  including the dedicated Mac Studio serving over Tailscale (preferred) and
+  local `docker model` access.
 - Use `uv` for Python and Docker/Compose for models or supporting services where
   appropriate.
 
-Inspect this session's hardware, installed models, and training access before
-sizing experiments. The sibling study's verified MLX route is a starting point,
-not proof that the same resources are available here. Inference-only endpoints
-can supply controls or candidate lessons but cannot perform the parameter
+The completed comparisons used native MLX with Qwen3-4B; their results below
+record the exact model revision, runtime, and resource measurements. For new
+work, inspect the session's hardware, installed models, and training access
+before sizing experiments. Inference-only endpoints can supply controls or
+candidate lessons but cannot perform the parameter
 intervention. No paid API or remote-compute campaign is commissioned by this brief.
 
 ## Findings and publication
